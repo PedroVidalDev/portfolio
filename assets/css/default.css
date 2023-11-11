@@ -25,3 +25,7 @@ html{
 a{
     all: unset;
 }
+
+section{
+    min-height: 750px;
+}
