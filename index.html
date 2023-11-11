@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/skills.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <title> Portfolio | Pedro Vidal </title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="/"> Vidas </a>
+            
+            <div onclick="show()" class="mobile_menu">
+                <div class="line1"> </div>
+                <div class="line2"> </div>
+                <div class="line3"> </div>
+            </div>
+
+            <ul class="nav-list">
+                <li> <a onclick="hid()" class="menu" href="#home"> Home </a> </li>
+                <li> <a onclick="hid()" class="menu" href="#skills"> Skills </a> </li>
+                <li> <a onclick="hid()" class="menu" href="#projects"> Projects </a> </li>
+                <li> <a onclick="hid()" class="menu" href="#contact"> Contact </a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+
+        <div class="adjust-home">
+        
+            <div class="adjust-content-home">
+
+                <p> What's up, I'm </p>
+                <h1> <a href="https://www.linkedin.com/in/pedro-vidal-5a4509255/"> Pedro Vidal </a> </h1>
+
+                <div class="adjust-content-buttons-home">
+                    <a href="assets/docs/Pedro Henrique Vidal dos Santos.pdf">
+                        <button class="cv-button"> 
+                            Download CV 
+                        </button>
+                    </a> 
+                    <a href="https://github.com/PedroVidalDev">
+                        <button class="git-button"> 
+                            GitHub 
+                        </button>
+                    </a> 
+                </div>
+
+            </div>
+            
+            <img src="assets/img/icon.png">
+
+        </div>
+
+    </section>
+
+    <section id="skills" class="skills">
+        <h2> Skills </h2>
+        <p id="description">  </p>
+        <div class="adjust-skills">
+            <div class="languages-div">
+                <div id="html-box" class="language-box">
+                    <img src="assets/img/languages-icons/html.png" width="128px">
+                </div>
+                <div id="css-box" class="language-box">
+                    <img src="assets/img/languages-icons/css.png" width="128px">
+                </div>
+                <div id="js-box" class="language-box">
+                    <img src="assets/img/languages-icons/js.png" width="128px">
+                </div>
+                <div id="java-box" class="language-box">
+                    <img src="assets/img/languages-icons/java.png" width="128px">
+                </div>
+                <div id="spring-box" class="language-box">
+                    <img src="assets/img/languages-icons/spring.png" width="128px">
+                </div>
+                <div id="python-box" class="language-box">
+                    <img src="assets/img/languages-icons/python.png" width="128px">
+                </div>
+                <div id="mysql-box" class="language-box">
+                    <img src="assets/img/languages-icons/mysql.png" width="128px">
+                </div>
+                <div id="postgre-box" class="language-box">
+                    <img src="assets/img/languages-icons/postgre.png" width="128px">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2> Projects </h2>
+        <div class="adjust-projects">
+            <div class="projects-div">
+                <div class="project-box">
+                    <img src="assets/img/projects-icons/sphynxv2.png">
+                    <h3> Sphynx V2 </h3>
+                    <p> Spring | Java </p>
+                    <button> <a href="https://github.com/PedroVidalDev/sphynx_v2_backend"> See more </a> </button>
+                </div>
+                <div class="project-box">
+                    <img src="assets/img/projects-icons/lifesearch.png">
+                    <h3> LifeSearch </h3>
+                    <p> PHP | Laravel </p>
+                    <button> <a href="https://github.com/PedroVidalDev/life-search"> See more </a> </button>
+                </div>
+                <div class="project-box">
+                    <img src="assets/img/projects-icons/newgo2.jpg">
+                    <h3> NewGO ATV2 </h3>
+                    <p> Java | Servlet </p>
+                    <button> <a href="https://github.com/PedroVidalDev/NewGo-Back-End-02-PedroVidal"> See more </a> </button>
+                </div>
+                <div class="project-box">
+                    <img src="assets/img/projects-icons/sphynx.jpg">
+                    <h3> Sphynx </h3>
+                    <p> C++ | JS </p>
+                    <button> <a href="https://github.com/PedroVidalDev/esp32-sphynx"> See more </a> </button>
+                </div>
+                <div class="project-box">
+                    <img src="assets/img/projects-icons/aluraSpring.jpg">
+                    <h3> Alura Spring </h3>
+                    <p> Spring | Java </p>
+                    <button> <a href="https://github.com/PedroVidalDev/Projeto_Introducao_Spring_Boot_Alura"> See more </a> </button>
+                </div>
+                <div class="project-box">
+                    <img src="assets/img/projects-icons/sphynxv2.png">
+                    <h3> Statilator </h3>
+                    <p> Python | Tkinter </p>
+                    <button> <a href="https://github.com/PedroVidalDev/Projeto_Statilator_FATEC"> See more </a> </button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="adjust-footer">
+
+        </div>
+    </footer>
+</body>
+<script src="assets/js/header.js"></script>
+<script src="assets/js/skills.js"></script>
+</html>
