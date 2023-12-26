@@ -1,5 +1,5 @@
 const boxes = document.querySelectorAll(".language-box")
-const description = document.querySelector("#description");
+const description = document.querySelector("#skills-description");
 
 boxes.forEach(box => {
     box.addEventListener("mouseover", () => {
