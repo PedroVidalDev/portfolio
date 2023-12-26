@@ -1,34 +1,42 @@
 [
     {
         "id": "html-box",
-        "imageUrl": "../../assets/img/languages-icons/html.png"
+        "imageUrl": "../../assets/img/languages-icons/html.png",
+        "text": "HTML is the standard markup language for creating Web pages."
     },
     {
         "id": "css-box",
-        "imageUrl": "../assets/img/languages-icons/css.png"
+        "imageUrl": "../assets/img/languages-icons/css.png",
+        "text": "CSS is a computer language for laying out and structuring web pages."
     },
     {
         "id": "js-box",
-        "imageUrl": "../assets/img/languages-icons/js.png"
+        "imageUrl": "../assets/img/languages-icons/js.png",
+        "text": "JavaScript is a scripting language that enables you to create dynamically updating content."
     },
     {
         "id": "java-box",
-        "imageUrl": "../assets/img/languages-icons/java.png"
+        "imageUrl": "../assets/img/languages-icons/java.png",
+        "text": "Java is a object-oriented language that can be used as a platform in itself."
     },
     {
         "id": "spring-box",
-        "imageUrl": "../assets/img/languages-icons/spring.png"
+        "imageUrl": "../assets/img/languages-icons/spring.png",
+        "text": "Spring is a Java framework created with the aim of facilitating application development."
     },
     {
         "id": "python-box",
-        "imageUrl": "../assets/img/languages-icons/python.png"
+        "imageUrl": "../assets/img/languages-icons/python.png",
+        "text": "Python is a programming language widely used in web applications, software development and more."
     },
     {
         "id": "mysql-box",
-        "imageUrl": "../assets/img/languages-icons/mysql.png"
+        "imageUrl": "../assets/img/languages-icons/mysql.png",
+        "text": "MySQL is a database management system that uses the SQL language as an interface."
     },
     {
         "id": "postgre-box",
-        "imageUrl": "../assets/img/languages-icons/postgre.png"
+        "imageUrl": "../assets/img/languages-icons/postgre.png",
+        "text": "PostgreSQL is an object-relational database management system, developed as an open source project."
     }  
 ]
