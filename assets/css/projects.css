@@ -45,18 +45,24 @@
     flex-direction: column;
     width: 300px;
     min-width: 300px;
-    height: 400px;
+    height: 375px;
     background-color: var(--color-background-bright);
     border-radius: 20px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     box-shadow: 1px 1px 2px black;
+    padding: 10px 10px;
+    transition: .5s;
+}
+
+.project-box:hover{
+    background-color: var(--color-background-mid);
 }
 
 .project-box img{
     position: relative;
-    height: 50%;
-    width: 95%;
+    height: 60%;
+    width: 100%;
     border-radius: 20px;
     box-shadow: 1px 1px 2px black;
 }
@@ -67,7 +73,7 @@
     font-size: 0.6rem;
 }
 
-.project-box p{
+.project-box .project-box-texts p{
     color: var(--color-gray);
     text-align: center;
     font-size: 0.3rem;
@@ -77,19 +83,21 @@
     position: relative;
     width: 75%;
     height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-box a button{
     position: relative;
     width: 100%;
-    height: 60px;
+    height: 100%;
     border-radius: 20px;
     border: 0;
     background-color: var(--color-background-project-button);
     color: white;
     font-size: 0.5rem;
     cursor: pointer;
-    margin-top: 5px;
     transition: .5s;
 }
 
