@@ -16,6 +16,17 @@
     text-shadow: 1px 1px 2px black;
 }
 
+.projects p.projects-description{
+    color: var(--color-gray);
+    text-shadow: 1px 1px 2px black;
+    font-size: 0.4rem;
+    opacity: 0%;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    transition: .5s;
+}
+
 .adjust-projects{
     position: relative;
     display: flex;
