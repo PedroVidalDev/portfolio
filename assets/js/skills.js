@@ -1,4 +1,21 @@
-const boxes = document.querySelectorAll(".language-box")
+import listSkills from "../json/skills.json" assert { type: "json" };
+const languagesDiv = document.querySelector(".languages-div");
+
+listSkills.forEach(skill => {
+    let mainDiv = document.createElement("div");
+    mainDiv.id = skill.id;
+    mainDiv.className = "language-box";
+
+    let image = document.createElement("img");
+    image.src = skill.imageUrl;
+    image.style.width = "128px";
+
+    mainDiv.appendChild(image);
+
+    languagesDiv.appendChild(mainDiv);
+})
+
+const boxes = document.querySelectorAll(".language-box");
 const skillsDescription = document.querySelector("#skills-description");
 
 boxes.forEach(box => {

@@ -1,0 +1,34 @@
+[
+    {
+        "id": "html-box",
+        "imageUrl": "../../assets/img/languages-icons/html.png"
+    },
+    {
+        "id": "css-box",
+        "imageUrl": "../assets/img/languages-icons/css.png"
+    },
+    {
+        "id": "js-box",
+        "imageUrl": "../assets/img/languages-icons/js.png"
+    },
+    {
+        "id": "java-box",
+        "imageUrl": "../assets/img/languages-icons/java.png"
+    },
+    {
+        "id": "spring-box",
+        "imageUrl": "../assets/img/languages-icons/spring.png"
+    },
+    {
+        "id": "python-box",
+        "imageUrl": "../assets/img/languages-icons/python.png"
+    },
+    {
+        "id": "mysql-box",
+        "imageUrl": "../assets/img/languages-icons/mysql.png"
+    },
+    {
+        "id": "postgre-box",
+        "imageUrl": "../assets/img/languages-icons/postgre.png"
+    }  
+]
