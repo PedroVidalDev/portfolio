@@ -1,0 +1,51 @@
+[
+    {
+        "title": "Sphynx V2",
+        "subtitle": "Spring | Java",
+        "imageUrl": "../assets/img/projects-icons/sphynxv2.png",
+        "repository": "https://github.com/PedroVidalDev/sphynx_v2_backend",
+        "text": "Continuation of the Sphynx project, focusing on improving and adding features to the original project."
+    },
+    {
+        "title": "Sphynx",
+        "subtitle": "C++ | JS",
+        "imageUrl": "../assets/img/projects-icons/sphynx.jpg",
+        "repository": "https://github.com/PedroVidalDev/esp32-sphynx",
+        "text": "Project with the objective of creating a simple and practical security system, using embedded systems and web servers."
+    },
+    {
+        "title": "Socius",
+        "subtitle": "Spring | Java",
+        "imageUrl": "../assets/img/projects-icons/socius.jpg",
+        "repository": "https://github.com/PedroVidalDev/Socius",
+        "text": "Application aiming to help club owners better control their business."
+    },
+    {
+        "title": "Alura Spring",
+        "subtitle": "Spring | Java",
+        "imageUrl": "../assets/img/projects-icons/aluraSpring.jpg",
+        "repository": "https://github.com/PedroVidalDev/Projeto_Introducao_Spring_Boot_Alura",
+        "text": "Project developed during an introduction course to the Spring Framework on the Alura platform, focusing on creating a simple CRUD."
+    },
+    {
+        "title": "NewGO ATV2",
+        "subtitle": "Java | Servlet",
+        "imageUrl": "../assets/img/projects-icons/newgo2.jpg",
+        "repository": "https://github.com/PedroVidalDev/NewGo-Back-End-02-PedroVidal",
+        "text": "Project that aims to create an inventory management system."
+    },
+    {
+        "title": "LifeSearch",
+        "subtitle": "PHP | Laravel",
+        "imageUrl": "../assets/img/projects-icons/lifesearch.png",
+        "repository": "https://github.com/PedroVidalDev/life-search",
+        "text": "Project with the aim of creating a forum for the dissemination of technology-related projects."
+    },
+    {
+        "title": "Statilator",
+        "subtitle": "Python | Tkinter",
+        "imageUrl": "../assets/img/projects-icons/statilator.avif",
+        "repository": "https://github.com/PedroVidalDev/Projeto_Statilator_FATEC",
+        "text": "Simple project developed with the intention of being a statistical calculator."
+    }
+]
