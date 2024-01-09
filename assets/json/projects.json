@@ -25,7 +25,7 @@
         "subtitle": "Spring | Java",
         "imageUrl": "../assets/img/projects-icons/aluraSpring.jpg",
         "repository": "https://github.com/PedroVidalDev/Projeto_Introducao_Spring_Boot_Alura",
-        "text": "Project developed during an introduction course to the Spring Framework on the Alura platform, focusing on creating a simple CRUD."
+        "text": "Project developed during an introduction course to the Spring Framework on the Alura platform."
     },
     {
         "title": "NewGO ATV2",
