@@ -25,6 +25,16 @@
         "text": "Spring is a Java framework created with the aim of facilitating application development."
     },
     {
+        "id": "php-box",
+        "imageUrl": "../assets/img/languages-icons/php.png",
+        "text": "PHP is a programming language originally intended for developing websites and web applications"
+    },
+    {
+        "id": "laravel-box",
+        "imageUrl": "../assets/img/languages-icons/laravel.png",
+        "text": "Laravel is a PHP Framework used for web development."
+    },
+    {
         "id": "python-box",
         "imageUrl": "../assets/img/languages-icons/python.png",
         "text": "Python is a programming language widely used in web applications, software development and more."
