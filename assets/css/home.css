@@ -87,6 +87,10 @@
 }
 
 @media (max-width: 1400px){
+    .home{
+        min-height: 950px;
+    }
+
     .adjust-home img{
         width: 500px;
     }
