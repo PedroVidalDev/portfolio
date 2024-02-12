@@ -14,6 +14,20 @@
         "text": "Project with the objective of creating a simple and practical security system, using embedded systems and web servers."
     },
     {
+        "title": "Picpay Simplified.",
+        "subtitle": "Spring | Java",
+        "imageUrl": "../assets/img/projects-icons/picpay.jpg",
+        "repository": "https://github.com/PedroVidalDev/picpay-simplificado",
+        "text": "The objective of the repository is to create a simplified picpay."
+    },
+    {
+        "title": "Task Manager",
+        "subtitle": "Spring | Java",
+        "imageUrl": "../assets/img/projects-icons/simplify.jpg",
+        "repository": "https://github.com/PedroVidalDev/desafio-backend-simplify",
+        "text": "Project with the objective of creating an application for creating and organizing tasks."
+    },
+    {
         "title": "Socius",
         "subtitle": "Spring | Java",
         "imageUrl": "../assets/img/projects-icons/socius.jpg",
