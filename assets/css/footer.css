@@ -22,7 +22,7 @@ footer{
     margin: 0 10px;
     color: white;
     cursor: pointer;
-    transition: .5s;
+    transition: .5s; 
 }
 
 .adjust-footer-icons i:hover{
