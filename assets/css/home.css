@@ -87,6 +87,48 @@
 }
 
 @media (max-width: 1400px){
+    .adjust-content-home p{
+        font-size: 0.5rem;
+    }
+    
+    .adjust-content-home h1{
+        font-size: 1.2rem;
+    }
+
+    .adjust-home img{
+        width: 450px;
+    }
+
+    .adjust-content-buttons-home a{
+        height: 40px;
+    }
+
+    .adjust-content-buttons-home a button{
+        font-size: 0.25rem;
+    }
+}
+
+@media (max-width: 1120px){
+    .adjust-content-home p{
+        font-size: 0.2rem;
+    }
+    
+    .adjust-content-home h1{
+        font-size: 0.9rem;
+    }
+
+    .adjust-home img{
+        width: 350px;
+    }
+
+    .adjust-content-buttons-home a{
+        height: 30px;
+    }
+
+}
+
+
+@media (max-width: 864px){
     .home{
         min-height: 950px;
     }
@@ -100,10 +142,12 @@
     }
 
     .adjust-content-home p{
+        font-size: 0.8rem;
         text-align: center;
     }
-
+    
     .adjust-content-home h1{
+        font-size: 1.5rem;
         text-align: center;
     }
 
@@ -111,6 +155,7 @@
         width: 47%;
         height: 60px;
     }
+
 }
 
 @media (max-width: 608px){
@@ -120,47 +165,35 @@
 
     .adjust-content-home p{
         font-size: 0.5rem;
-        text-align: center;
     }
-
+    
     .adjust-content-home h1{
-        text-align: center;
         font-size: 1.2rem;
     }
+
+    .adjust-content-buttons-home button{
+        width: 47%;
+        height: 60px;
+    }
+
 }
 
-@media (max-width: 492px){
+@media (max-width: 496px){
     .adjust-home img{
         width: 300px;
     }
 
     .adjust-content-home p{
-        font-size: 0.3rem;
-        text-align: center;
+        font-size: 0.2rem;
     }
-
+    
     .adjust-content-home h1{
-        text-align: center;
-        font-size: 1rem;
-    }
-
-    .adjust-content-buttons-home{
-        flex-direction: column-reverse;
-        margin-top: 20px;
+        font-size: 0.9rem;
     }
 
     .adjust-content-buttons-home button{
-        width: 100%;
+        width: 47%;
         height: 60px;
     }
 
-    .cv-button{
-        margin-top: 10px;
-    }
-}
-
-@media (max-width: 492px){
-    .adjust-content-home h1{
-        font-size: 0.7rem;
-    }
 }
