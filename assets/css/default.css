@@ -14,3 +14,10 @@ html{
 :root{
     --cor-azul: #00D1FF;
 }
+
+h1{
+    color: white;
+    position: relative;
+    font-size: 2rem;
+    text-shadow: 4px 2px 0px var(--cor-azul);
+}
