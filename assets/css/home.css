@@ -82,5 +82,6 @@ i{
 /* EFEITO BOTOES */
 .home-buttons-container button:hover{
     border: 0;
+    color: var(--cor-azul);
     background: #ffffff71;
 }
