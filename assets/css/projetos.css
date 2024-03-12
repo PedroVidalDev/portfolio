@@ -1,0 +1,65 @@
+.projetos{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.projetos h1{
+    font-size: 1rem;
+}
+
+.projetos-container{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projeto-tela{
+    position: relative;
+    background-color: gray;
+    border: 0;
+    width: 50%;
+    height: 80%;
+    border-radius: 50px 0px 0px 50px;
+}
+
+.projetos-menu{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.projeto-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 30px;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 0px 30px 30px 0px;
+    transition: .5s;
+}
+
+.projeto-box a{
+    text-decoration: none;
+    font-size: 0.5rem;
+    color: black;
+}
+
+.projeto-box:hover{
+    box-shadow: -4px 5px 0px var(--cor-azul);
+    letter-spacing: 5px;
+}

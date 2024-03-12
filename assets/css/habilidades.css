@@ -1,3 +1,4 @@
+/* ESTILO DA SESSAO HABILIDADES */
 .habilidades{
     position: relative;
     display: flex;
@@ -18,6 +19,7 @@
     color: gray;
 }
 
+/* CONTAINER ONDE FICAM AS HABILIDADES */
 .habilidades-container{
     position: relative;
     display: flex;
@@ -28,6 +30,7 @@
     width: 80%;
 }
 
+/* MUDANCAS NO SCROLL */
 .habilidades-container::-webkit-scrollbar{
     width: 10px;
 }
@@ -41,6 +44,7 @@
     border-radius: 10px;
 }
 
+/* BOX DAS HABILIDADES */
 .habilidade-box{
     position: relative;
     display: flex;
