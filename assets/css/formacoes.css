@@ -90,3 +90,51 @@
         filter: brightness(100%);
     }
 }
+
+@media (max-width: 900px){
+    .formacao-box a{
+        font-size: 0.4rem;
+    }
+}
+
+@media (max-width: 846px){
+    .formacoes{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formacoes-imagem{
+        position: absolute;
+        width: 100%;
+    }
+
+    .formacoes-imagem img{
+        width: 70%;
+        animation: piscar 5s infinite;
+    }
+
+    .formacoes-container{
+        width: 70%;
+    }
+
+    .formacao-box{
+        border-radius: 0px 30px 0px 30px;
+    }
+
+}
+
+@media (max-width: 540px){
+    .formacoes-container{
+        width: 90%;
+    }
+}
+
+@media (max-width: 409px){
+    .formacoes-container h1{
+        font-size: 0.8rem;
+    }
+
+    .formacao-box a{
+        font-size: 0.3rem;
+    }
+}
