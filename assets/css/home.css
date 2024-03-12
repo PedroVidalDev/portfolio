@@ -17,6 +17,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    max-width: 1250px;
     height: 100%;
 }
 
@@ -29,6 +30,10 @@
 
 .home-container h2 span{
     color: var(--cor-azul);
+}
+
+.mobile-title{
+    display: none;
 }
 
 /* BOTOES */
@@ -77,4 +82,41 @@ i{
     border: 0;
     color: var(--cor-azul);
     background: #ffffff71;
+}
+
+@media (max-width: 744px){
+    .desktop-title{
+        display: none;
+    }
+
+    .mobile-title{
+        text-align: center;
+        display: flex;
+    }
+
+    .home-buttons-container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .home-buttons-container button{
+        width:60%;
+        margin-top: 10px;
+    }
+
+    .home-github-button{
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .home-linkedin-button{
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .home-curriculo-button{
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+
+@media (max-width: 572px){
+
 }
