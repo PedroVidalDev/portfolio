@@ -110,7 +110,7 @@ i{
         width: 100%;
     }
 
-    .home-buttons-container button{
+    .home-buttons-container a{
         width:60%;
         margin-top: 10px;
     }
