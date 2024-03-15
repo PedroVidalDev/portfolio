@@ -61,17 +61,13 @@
     padding-left: 90px;
 }
 
-.projeto-box a:hover{
-    color: rgba(0, 0, 0, 0.507);
-}
-
 .sub-menu{
     display: block;
     background-color: var(--cor-azul-escuro);
     width: 100%;
 }
 
-.sub-menu p{
+.sub-menu a{
     padding-left: 90px;
     padding-top: 10px;
     padding-right: 10px;
@@ -79,6 +75,10 @@
     transition: .5s;
     font-size: 0.4rem;
     text-align: justify;
+}
+
+.sub-menu a:hover{
+    color: #ffffffad;
 }
 
 .projeto-box:hover{
@@ -90,7 +90,7 @@
         font-size: 0.3rem;
     }
 
-    .sub-menu p{
+    .sub-menu a{
         font-size: 0.2rem;
     }
 
