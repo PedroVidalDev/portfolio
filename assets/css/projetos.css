@@ -126,6 +126,7 @@
 
  @media (max-width: 850px){
     .projetos-container{
+        justify-content: center;
         flex-direction: column-reverse;
     }
 
