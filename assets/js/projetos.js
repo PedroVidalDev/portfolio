@@ -2,9 +2,20 @@
 $('.sub-btn').next('.sub-menu').slideToggle();
 
 $(document).ready(function(){
-    $('.projeto-box').hover(function(){
-        $(this).children('.sub-menu').slideToggle();
+    $('.projeto-box').click(function(){
+        let caixaAberta = $(this).parent().parent().find('.open');
+        let caixaClickada = $(this).children('.sub-menu');
+
+        if(caixaAberta.text() == caixaClickada.text()){
+            caixaAberta.slideToggle().toggleClass('open');
+        } 
+        
+        else{
+            caixaAberta.slideToggle().toggleClass('open');
+            caixaClickada.slideToggle().toggleClass('open');
+        }
     })
+
 })
 
 // IMAGEM //
@@ -12,29 +23,57 @@ const divImagem = document.querySelector(".projeto-tela");
 const projetos = document.querySelectorAll(".projeto-box");
 
 projetos.forEach(projeto => {
-    projeto.addEventListener("mouseover", () => {
+    projeto.addEventListener("click", () => {
         let nome = projeto.querySelector(".sub-btn").innerHTML;
         let nomeFormatado = nome.trim();
 
-        let img = document.createElement("img");
-        img.className = "projeto-img";
+        let imagemExistente = divImagem.querySelector(".projeto-img");
+        
+        if(imagemExistente){
 
-        if(nomeFormatado == "Sphynx - Segurança Escolar"){
-            img.src = "/assets/img/projetos/sphynx.jpg";
+            if(imagemExistente.alt == nomeFormatado){
+                esconderImagem(imagemExistente);
+            }
+            else{
+                esconderImagem(imagemExistente);
+
+                criarImagem(nomeFormatado);
+            }
+
         }
-        if(nomeFormatado == "Socius - Gerência de Clubes"){
-            img.src = "/assets/img/projetos/socius.jpg";
+
+        else{
+            criarImagem(nomeFormatado);
         }
-        if(nomeFormatado == "Picpay Simplificado"){
-            img.src = "/assets/img/projetos/picpay.webp";
-        }
-        if(nomeFormatado == "Livraria Alura"){
-            img.src = "/assets/img/projetos/livraria.jpg";
-        }
-        divImagem.appendChild(img);
     });
-
-    projeto.addEventListener("mouseout", () => {
-        divImagem.innerHTML = "";
-    })
 });
+
+function criarImagem(alt){
+    let img = document.createElement("img");
+    img.className = "projeto-img";
+    img.alt = alt;
+
+    if(alt == "Sphynx - Segurança Escolar"){
+        img.src = "/assets/img/projetos/sphynx.jpg";
+    }
+    if(alt == "Socius - Gerência de Clubes"){
+        img.src = "/assets/img/projetos/socius.jpg";
+    }
+    if(alt == "Picpay Simplificado"){
+        img.src = "/assets/img/projetos/picpay.webp";
+    }
+    if(alt == "Livraria Alura"){
+        img.src = "/assets/img/projetos/livraria.jpg";
+    }
+    divImagem.appendChild(img);
+}
+
+function esconderImagem(imagemExistente){
+    imagemExistente.classList.toggle("hidden");
+            
+    function esconderImagem(){
+        imagemExistente.remove();
+    }
+
+    setTimeout(esconderImagem, 500);
+}

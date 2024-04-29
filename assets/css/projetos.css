@@ -41,6 +41,11 @@
     animation-fill-mode: forwards;
 }
 
+.hidden{
+    animation: hiddenImage .5s;
+    animation-fill-mode: forwards;
+}
+
 .projetos-menu{
     position: relative;
     display: flex;
@@ -150,5 +155,15 @@
 
     100%{
         opacity: 100%;
+    }
+}
+
+@keyframes hiddenImage{
+    0%{
+        opacity: 100%;
+    }
+
+    100%{
+        opacity: 0%;
     }
 }

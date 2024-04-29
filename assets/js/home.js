@@ -5,13 +5,13 @@ var typewriter = new Typewriter(cargo, {
 });
 
 typewriter
-    .typeString('Fullstack')
-    .pauseFor(2500)
-    .deleteAll()
     .typeString('Backend')
     .pauseFor(2500)
     .deleteAll()
-    .typeString('Frontend')
+    .typeString('Java')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Node.js')
     .pauseFor(2500)
     .deleteAll()
     .typeString('Web')
