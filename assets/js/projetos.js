@@ -71,9 +71,9 @@ function criarImagem(alt){
 function esconderImagem(imagemExistente){
     imagemExistente.classList.toggle("hidden");
             
-    function esconderImagem(){
+    function esconder(){
         imagemExistente.remove();
     }
 
-    setTimeout(esconderImagem, 500);
+    setTimeout(esconder, 100);
 }

@@ -42,7 +42,7 @@
 }
 
 .hidden{
-    animation: hiddenImage .5s;
+    animation: hiddenImage .1s;
     animation-fill-mode: forwards;
 }
 
