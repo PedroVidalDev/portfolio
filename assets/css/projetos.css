@@ -6,7 +6,7 @@
     height: 90vh;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    background-color: var(--cor-background);
 }
 
 .projetos-container{
@@ -22,7 +22,7 @@
 .projeto-tela{
     position: relative;
     display: flex;
-    background-color: rgb(27, 27, 27);
+    background-color: var(--cor-background-pouco-destaque);
     border: 0;
     width: 50%;
     height: 80%;

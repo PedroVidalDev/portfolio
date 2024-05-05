@@ -12,8 +12,10 @@ html{
 }
 
 :root{
+    --cor-background: #000b0e;
+    --cor-background-pouco-destaque: #00141a;
     --cor-azul: #00D1FF;
-    --cor-azul-escuro: #001c22;
+    --cor-azul-escuro: #00181f;
 }
 
 h1{

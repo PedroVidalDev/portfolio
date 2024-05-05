@@ -7,7 +7,7 @@
     height: 60vh;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: var(--cor-background);
 }
 
 .habilidades h1{
