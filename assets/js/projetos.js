@@ -3,6 +3,7 @@ import dividirLista from "./utils/dividirLista.js";
 
 const botoesProjetos = document.querySelectorAll("#projetos-botao");
 const containerProjetoBox = document.querySelector("#container-projeto-box");
+const legendaBotao = document.querySelector("#menu-projetos-number");
 
 let i = 0;
 const partesLista = dividirLista(listaProjetos, 4);
@@ -58,32 +59,41 @@ botoesProjetos.forEach(botao => {
         if(acao == "&gt;"){
             try{
                 if((i+1) < partesLista.length){
-                    i++;
-                    mostrarProjetos(partesLista[i]); 
-                    $('.sub-btn').next('.sub-menu').slideToggle();
+                    i++;  
+                } 
+
+                else{
+                    i = 0;
                 }
             }
             catch(erro){
                 i--;
+                return;
             }
         }
 
         else if(acao == "&lt;"){
             try{
                 if(i > 0){
-                    i--;
-                    mostrarProjetos(partesLista[i]); 
-                    
+                    i--;                    
                     $('.sub-btn').next('.sub-menu').slideToggle();
+                } 
+                
+                else{
+                    i = listaProjetos.length - 1;
                 }
             }
             catch(erro){
                 i++;
+                return;
             }
         }
 
+        mostrarProjetos(partesLista[i]);
+        $('.sub-btn').next('.sub-menu').slideToggle();
         atribuindoAnimacaoMenu();
         atribuirFuncaoAosProjetos();
+        legendaBotao.innerHTML = i + 1;
     })
 })
 
@@ -91,21 +101,10 @@ function criarImagem(alt){
     let img = document.createElement("img");
     img.className = "projeto-img";
     img.alt = alt;
+
     const objeto = partesLista[i].find(projeto => projeto.nome === alt);
     img.src = objeto.imagem;
-
-    // if(alt == "Sphynx - Segurança Escolar"){
-    //     img.src = "/assets/img/projetos/sphynx.jpg";
-    // }
-    // if(alt == "Socius - Gerência de Clubes"){
-    //     img.src = "/assets/img/projetos/socius.jpg";
-    // }
-    // if(alt == "Picpay Simplificado"){
-    //     img.src = "/assets/img/projetos/picpay.webp";
-    // }
-    // if(alt == "Livraria Alura"){
-    //     img.src = "/assets/img/projetos/livraria.jpg";
-    // }
+    
     divImagem.appendChild(img);
 }
 

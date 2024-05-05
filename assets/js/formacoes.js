@@ -3,7 +3,7 @@ import dividirLista from "./utils/dividirLista.js";
 
 const formacaoContainerAjuste = document.querySelector("#formacoes-container-ajuste");
 const botoesFormacoes = document.querySelectorAll("#formacoes-botao");
-const legendaBotao = document.querySelector("#menu-number");
+const legendaBotao = document.querySelector("#menu-formacoes-number");
 
 let i = 0;
 const partesLista = dividirLista(listaFormacoes, 4);
@@ -31,13 +31,15 @@ botoesFormacoes.forEach(botao => {
             try{
                 if((i+1) < partesLista.length){
                     i++; 
-                } else{
+                } 
+                
+                else{
                     i = 0;
                 }
-                mostrarFormacoes(partesLista[i]);
             }
             catch(erro){
                 i--;
+                return;
             }
         }
 
@@ -45,15 +47,19 @@ botoesFormacoes.forEach(botao => {
             try{
                 if(i > 0){
                     i--;  
-                } else{
+                } 
+                
+                else{
                     i = partesLista.length - 1;
                 }
-                mostrarFormacoes(partesLista[i]); 
             }
             catch(erro){
                 i++;
+                return
             }
         }
+
+        mostrarFormacoes(partesLista[i]);
         legendaBotao.innerHTML = i + 1;
     })
 })
