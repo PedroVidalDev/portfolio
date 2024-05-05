@@ -72,14 +72,6 @@
 }
 
 /* DIV DOS BOTOES EM FORMACOES */
-.formacoes-container-botoes{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    margin-top: 15px;
-}
-
 .formacoes-botao{
     position: relative;
     background: none;
