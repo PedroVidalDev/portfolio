@@ -18,33 +18,36 @@ $(document).ready(function(){
 
 // IMAGEM //
 const divImagem = document.querySelector(".projeto-tela");
-const projetos = document.querySelectorAll(".projeto-box");
 
-projetos.forEach(projeto => {
-    projeto.addEventListener("click", () => {
-        let nome = projeto.querySelector(".sub-btn").innerHTML;
-        let nomeFormatado = nome.trim();
+atribuirFuncaoAosProjetos();
 
-        let imagemExistente = divImagem.querySelector(".projeto-img");
-        
-        if(imagemExistente){
+function atribuirFuncaoAosProjetos(){
+    const projetos = document.querySelectorAll(".projeto-box");
 
-            if(imagemExistente.alt == nomeFormatado){
-                esconderImagem(imagemExistente);
+    projetos.forEach(projeto => {
+        projeto.addEventListener("click", () => {
+            let nome = projeto.querySelector(".sub-btn").innerHTML;
+            let nomeFormatado = nome.trim();
+    
+            let imagemExistente = divImagem.querySelector(".projeto-img");
+            
+            if(imagemExistente){
+                if(imagemExistente.alt == nomeFormatado){
+                    esconderImagem(imagemExistente);
+                }
+                else{
+                    esconderImagem(imagemExistente);
+    
+                    criarImagem(nomeFormatado);
+                }
             }
+    
             else{
-                esconderImagem(imagemExistente);
-
                 criarImagem(nomeFormatado);
             }
-
-        }
-
-        else{
-            criarImagem(nomeFormatado);
-        }
+        });
     });
-});
+}
 
 botoesProjetos.forEach(botao => {
     botao.addEventListener("click", (event) => {
@@ -79,7 +82,8 @@ botoesProjetos.forEach(botao => {
             }
         }
 
-        
+        atribuindoAnimacaoMenu();
+        atribuirFuncaoAosProjetos();
     })
 })
 
@@ -87,19 +91,21 @@ function criarImagem(alt){
     let img = document.createElement("img");
     img.className = "projeto-img";
     img.alt = alt;
+    const objeto = partesLista[i].find(projeto => projeto.nome === alt);
+    img.src = objeto.imagem;
 
-    if(alt == "Sphynx - Segurança Escolar"){
-        img.src = "/assets/img/projetos/sphynx.jpg";
-    }
-    if(alt == "Socius - Gerência de Clubes"){
-        img.src = "/assets/img/projetos/socius.jpg";
-    }
-    if(alt == "Picpay Simplificado"){
-        img.src = "/assets/img/projetos/picpay.webp";
-    }
-    if(alt == "Livraria Alura"){
-        img.src = "/assets/img/projetos/livraria.jpg";
-    }
+    // if(alt == "Sphynx - Segurança Escolar"){
+    //     img.src = "/assets/img/projetos/sphynx.jpg";
+    // }
+    // if(alt == "Socius - Gerência de Clubes"){
+    //     img.src = "/assets/img/projetos/socius.jpg";
+    // }
+    // if(alt == "Picpay Simplificado"){
+    //     img.src = "/assets/img/projetos/picpay.webp";
+    // }
+    // if(alt == "Livraria Alura"){
+    //     img.src = "/assets/img/projetos/livraria.jpg";
+    // }
     divImagem.appendChild(img);
 }
 
@@ -147,5 +153,4 @@ function mostrarProjetos(lista){
 
         containerProjetoBox.innerHTML += element;
     })
-    atribuindoAnimacaoMenu();
 }

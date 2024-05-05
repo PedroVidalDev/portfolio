@@ -2,41 +2,49 @@
     {
         "nome": "Sphynx - Segurança Escolar",
         "descricao": "Projeto com o objetivo de criar um sistema de segurançade alta confiabilidade e baixo custo para residênciase instuições de ensino.",
-        "url": "https://github.com/orgs/Cliyo/repositories"
+        "url": "https://github.com/orgs/Cliyo/repositories",
+        "imagem": "/assets/img/projetos/sphynx.jpg"
     },
     {
         "nome": "Socius - Gerência de Clubes",
         "descricao": "Projeto com o objetivo de gerenciar um clube, contando comoperações de CRUD para novos sócios, locais e agendamentos.",
-        "url": "https://github.com/PedroVidalDev/Socius"
+        "url": "https://github.com/PedroVidalDev/Socius",
+        "imagem": "/assets/img/projetos/socius.jpg"
     },
     {
         "nome": "Picpay Simplificado",
         "descricao": "Desafio para vaga de desenvolvedor backend da PicPay como objetivo de criar um sistema de transações, tal como umPicPay simplificado.",
-        "url": "https://github.com/PedroVidalDev/picpay-simplificado"
+        "url": "https://github.com/PedroVidalDev/picpay-simplificado",
+        "imagem": "/assets/img/projetos/picpay.webp"
     },
     {
         "nome": "Desafio Simplify",
         "descricao": "O objetivo do repositório é treinar o framework Spring, resolvendo um desafio de vaga backend e aprimorando minhas habilidades como programador.",
-        "url": "https://github.com/PedroVidalDev/desafio-backend-simplify"
+        "url": "https://github.com/PedroVidalDev/desafio-backend-simplify",
+        "imagem": "/assets/img/projetos/simplify.webp"
     },
     {
         "nome": "Liber Alura",
         "descricao": "Projeto com o objetivo de criar uma Rest API com Node.js eExpress.js que realize o gerenciamento de uma livraria, feitodurante o curso de Express da Alura.",
-        "url": "https://github.com/PedroVidalDev/Projeto-Introducao-NodeJS-Express-Alura"
+        "url": "https://github.com/PedroVidalDev/Projeto-Introducao-NodeJS-Express-Alura",
+        "imagem": "/assets/img/projetos/livraria.jpg"
     },
     {
         "nome": "Series Alura",
         "descricao": "O objetivo do projeto é fixar conhecimentos relacionados ao Sequelize.",
-        "url": "https://github.com/PedroVidalDev/Series-Alura"
+        "url": "https://github.com/PedroVidalDev/Series-Alura",
+        "imagem": "/assets/img/projetos/series.jpg"
     },
     {
         "nome": "Cavus Alura",
         "descricao": "Projeto feito com o objetivo de aprender o protocolo WebSocket, utilizando com Node.js.",
-        "url": "https://github.com/PedroVidalDev/Cavus-Alura"
+        "url": "https://github.com/PedroVidalDev/Cavus-Alura",
+        "imagem": "/assets/img/projetos/cavus.jpg"
     },
     {
         "nome": "Notionem",
         "descricao": "Projeto com o objetivo de criar um chat utilizando Node.js e WebSockets.",
-        "url": "https://github.com/PedroVidalDev/Notionem"
+        "url": "https://github.com/PedroVidalDev/Notionem",
+        "imagem": "/assets/img/projetos/notionem.jpg"
     }
 ]
