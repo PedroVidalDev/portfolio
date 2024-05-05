@@ -170,12 +170,6 @@
     
 }
 
-@media (max-width: 409px){
-    .projetos-menu h1{
-        font-size: 0.8rem;
-    }
-}
-
  @media (max-width: 850px){
     .projetos-container{
         justify-content: center;
@@ -205,6 +199,13 @@
         padding: 0 30px;
     }
 } 
+
+
+@media (max-width: 409px){
+    .projetos-menu h1{
+        font-size: 0.8rem;
+    }
+}
 
 @keyframes showImage {
     0%{
