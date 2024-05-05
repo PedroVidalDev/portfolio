@@ -68,6 +68,12 @@
     transition: .5s;
 }
 
+.container-projeto-box{
+    width: 100%;
+    line-height: 50px;
+    margin-top: 10px;
+}
+
 .projeto-box{
     position: relative;
     background-color: white;
