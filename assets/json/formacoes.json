@@ -1,0 +1,18 @@
+[
+    {
+        "nome": "ADS - Fatec Ferraz",
+        "url": "/assets/docs/CertificadoFatec.pdf"
+    },
+    {
+        "nome": "Formação Java e Spring",
+        "url": "https://cursos.alura.com.br/degree/certificate/10d216f2-a7c6-4b3a-b96f-32b7fae85217"
+    },
+    {
+        "nome": "Formação Node.js e Express",
+        "url": "https://cursos.alura.com.br/degree/certificate/61798eaf-00f8-4ea5-a417-22405b15ad04?lang=pt_BR"
+    },
+    {
+        "nome": "Formação Javascript",
+        "url": "https://cursos.alura.com.br/degree/certificate/260a5858-ca12-42b7-8544-a7ebb8d81f12?lang=pt_BR"
+    }
+]
