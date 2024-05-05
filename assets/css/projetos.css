@@ -58,6 +58,16 @@
     font-size: 1rem;
 }
 
+.projetos-botao{
+    position: relative;
+    background: none;
+    border: 0;
+    color: var(--cor-azul);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
 .projeto-box{
     position: relative;
     background-color: white;
