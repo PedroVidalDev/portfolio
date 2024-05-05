@@ -15,8 +15,28 @@
         "url": "https://github.com/PedroVidalDev/picpay-simplificado"
     },
     {
-        "nome": "Livraria Alura",
+        "nome": "Desafio Simplify",
+        "descricao": "O objetivo do repositório é treinar o framework Spring, resolvendo um desafio de vaga backend e aprimorando minhas habilidades como programador.",
+        "url": "https://github.com/PedroVidalDev/desafio-backend-simplify"
+    },
+    {
+        "nome": "Liber Alura",
         "descricao": "Projeto com o objetivo de criar uma Rest API com Node.js eExpress.js que realize o gerenciamento de uma livraria, feitodurante o curso de Express da Alura.",
         "url": "https://github.com/PedroVidalDev/Projeto-Introducao-NodeJS-Express-Alura"
+    },
+    {
+        "nome": "Series Alura",
+        "descricao": "O objetivo do projeto é fixar conhecimentos relacionados ao Sequelize.",
+        "url": "https://github.com/PedroVidalDev/Series-Alura"
+    },
+    {
+        "nome": "Cavus Alura",
+        "descricao": "Projeto feito com o objetivo de aprender o protocolo WebSocket, utilizando com Node.js.",
+        "url": "https://github.com/PedroVidalDev/Cavus-Alura"
+    },
+    {
+        "nome": "Notionem",
+        "descricao": "Projeto com o objetivo de criar um chat utilizando Node.js e WebSockets.",
+        "url": "https://github.com/PedroVidalDev/Notionem"
     }
 ]
