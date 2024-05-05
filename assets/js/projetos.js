@@ -1,3 +1,5 @@
+import listaProjetos from "../json/projetos.json" assert {type: "json"};
+
 // MENU //
 $('.sub-btn').next('.sub-menu').slideToggle();
 

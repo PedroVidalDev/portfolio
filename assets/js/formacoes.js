@@ -1,4 +1,5 @@
 import listaFormacoes from "../json/formacoes.json" assert {type: "json"};
+import dividirLista from "./utils/dividirLista.js";
 
 const formacaoContainerAjuste = document.querySelector("#formacoes-container-ajuste");
 const botoesFormacoes = document.querySelectorAll("#formacoes-botao");
@@ -6,14 +7,6 @@ const botoesFormacoes = document.querySelectorAll("#formacoes-botao");
 let i = 0;
 const partesLista = dividirLista(listaFormacoes, 4);
 mostrarFormacoes(partesLista[i]);
-
-function dividirLista(lista, tamanho) {
-    const partes = [];
-    for (let i = 0; i < lista.length; i += tamanho) {
-        partes.push(lista.slice(i, i + tamanho));
-    }
-    return partes;
-}
 
 function mostrarFormacoes(lista){
     formacaoContainerAjuste.innerHTML = "";
