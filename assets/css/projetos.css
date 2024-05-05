@@ -199,6 +199,11 @@
     .projeto-tela{
         display: none;
     }
+
+    .projetos-container-botoes{
+        width: 100%;
+        padding: 0 30px;
+    }
 } 
 
 @keyframes showImage {
