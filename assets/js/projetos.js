@@ -1,4 +1,13 @@
 import listaProjetos from "../json/projetos.json" assert {type: "json"};
+import dividirLista from "./utils/dividirLista.js";
+
+const botoesProjetos = document.querySelectorAll("#projetos-botao");
+const containerProjetoBox = document.querySelector("#container-projeto-box");
+
+let i = 0;
+const partesLista = dividirLista(listaProjetos, 4);
+
+mostrarProjetos(partesLista[0]);
 
 // MENU //
 $('.sub-btn').next('.sub-menu').slideToggle();
@@ -17,7 +26,6 @@ $(document).ready(function(){
             caixaClickada.slideToggle().toggleClass('open');
         }
     })
-
 })
 
 // IMAGEM //
@@ -50,6 +58,42 @@ projetos.forEach(projeto => {
     });
 });
 
+botoesProjetos.forEach(botao => {
+    botao.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        let acao = botao.innerHTML.trim();
+        
+        if(acao == "&gt;"){
+            try{
+                if((i+1) < partesLista.length){
+                    i++;
+                    mostrarProjetos(partesLista[i]); 
+                    $('.sub-btn').next('.sub-menu').slideToggle();
+                }
+            }
+            catch(erro){
+                i--;
+            }
+        }
+
+        else if(acao == "&lt;"){
+            try{
+                if(i > 0){
+                    i--;
+                    mostrarProjetos(partesLista[i]); 
+                    $('.sub-btn').next('.sub-menu').slideToggle();
+                }
+            }
+            catch(erro){
+                i++;
+            }
+        }
+
+        
+    })
+})
+
 function criarImagem(alt){
     let img = document.createElement("img");
     img.className = "projeto-img";
@@ -78,4 +122,24 @@ function esconderImagem(imagemExistente){
     }
 
     setTimeout(esconder, 100);
+}
+
+// MOSTRAR PROJETOS
+function mostrarProjetos(lista){
+    containerProjetoBox.innerHTML = "";
+
+    lista.forEach(projeto => {
+        const element = `
+        <div class="projeto-box"> 
+            <a class="sub-btn"> ${projeto.nome} </a>
+            <div class="sub-menu">
+                <a class="sub-item" href="${projeto.url}" target="_blank"> 
+                    ${projeto.descricao}
+                </a>
+            </div> 
+        </div>  
+        `
+
+        containerProjetoBox.innerHTML += element;
+    })
 }
