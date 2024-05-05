@@ -1,0 +1,22 @@
+[
+    {
+        "nome": "Sphynx - Segurança Escolar",
+        "descricao": "Projeto com o objetivo de criar um sistema de segurançade alta confiabilidade e baixo custo para residênciase instuições de ensino.",
+        "url": "https://github.com/orgs/Cliyo/repositories"
+    },
+    {
+        "nome": "Socius - Gerência de Clubes",
+        "descricao": "Projeto com o objetivo de gerenciar um clube, contando comoperações de CRUD para novos sócios, locais e agendamentos.",
+        "url": "https://github.com/PedroVidalDev/Socius"
+    },
+    {
+        "nome": "Picpay Simplificado",
+        "descricao": "Desafio para vaga de desenvolvedor backend da PicPay como objetivo de criar um sistema de transações, tal como umPicPay simplificado.",
+        "url": "https://github.com/PedroVidalDev/picpay-simplificado"
+    },
+    {
+        "nome": "Livraria Alura",
+        "descricao": "Projeto com o objetivo de criar uma Rest API com Node.js eExpress.js que realize o gerenciamento de uma livraria, feitodurante o curso de Express da Alura.",
+        "url": "https://github.com/PedroVidalDev/Projeto-Introducao-NodeJS-Express-Alura"
+    }
+]
