@@ -26,14 +26,12 @@ botoesFormacoes.forEach(botao => {
 
         let acao = botao.innerHTML.trim();
         
-
         if(acao == "&gt;"){
             try{
                 if((i+1) < partesLista.length){
                     i++;
                     mostrarFormacoes(partesLista[i]); 
                 }
-                
             }
             catch(erro){
                 i--;
