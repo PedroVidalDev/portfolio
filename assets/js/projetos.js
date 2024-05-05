@@ -13,19 +13,7 @@ mostrarProjetos(partesLista[0]);
 $('.sub-btn').next('.sub-menu').slideToggle();
 
 $(document).ready(function(){
-    $('.projeto-box').click(function(){
-        let caixaAberta = $(this).parent().parent().find('.open');
-        let caixaClickada = $(this).children('.sub-menu');
-
-        if(caixaAberta.text() == caixaClickada.text()){
-            caixaAberta.slideToggle().toggleClass('open');
-        } 
-        
-        else{
-            caixaAberta.slideToggle().toggleClass('open');
-            caixaClickada.slideToggle().toggleClass('open');
-        }
-    })
+    atribuindoAnimacaoMenu();
 })
 
 // IMAGEM //
@@ -82,6 +70,7 @@ botoesProjetos.forEach(botao => {
                 if(i > 0){
                     i--;
                     mostrarProjetos(partesLista[i]); 
+                    
                     $('.sub-btn').next('.sub-menu').slideToggle();
                 }
             }
@@ -124,6 +113,22 @@ function esconderImagem(imagemExistente){
     setTimeout(esconder, 100);
 }
 
+function atribuindoAnimacaoMenu(){
+    $('.projeto-box').click(function(){
+        let caixaAberta = $(this).parent().parent().find('.open');
+        let caixaClickada = $(this).children('.sub-menu');
+
+        if(caixaAberta.text() == caixaClickada.text()){
+            caixaAberta.slideToggle().toggleClass('open');
+        } 
+        
+        else{
+            caixaAberta.slideToggle().toggleClass('open');
+            caixaClickada.slideToggle().toggleClass('open');
+        }
+    })
+}
+
 // MOSTRAR PROJETOS
 function mostrarProjetos(lista){
     containerProjetoBox.innerHTML = "";
@@ -142,4 +147,5 @@ function mostrarProjetos(lista){
 
         containerProjetoBox.innerHTML += element;
     })
+    atribuindoAnimacaoMenu();
 }
