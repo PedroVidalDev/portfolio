@@ -80,7 +80,7 @@ botoesProjetos.forEach(botao => {
                 } 
                 
                 else{
-                    i = listaProjetos.length - 1;
+                    i = partesLista.length - 1;
                 }
             }
             catch(erro){
