@@ -9,220 +9,56 @@
     background-color: var(--cor-background);
 }
 
+.projetos h1{
+    font-size: 1rem;
+}
+
 .projetos-container{
     position: relative;
     display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.projeto-tela{
-    position: relative;
-    display: flex;
-    background-color: var(--cor-background-pouco-destaque);
-    border: 0;
-    width: 50%;
-    height: 80%;
-    border-radius: 50px 0px 0px 50px;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.projeto-img{
-    position: relative;
-    width: 98%;
-    height: 95%;
-    opacity: 0%;
-    border-radius: 50px 0px 0px 50px;
-    animation: showImage .5s;
-    animation-fill-mode: forwards;
-}
-
-.hidden{
-    animation: hiddenImage .1s;
-    animation-fill-mode: forwards;
-}
-
-.projetos-menu{
-    position: relative;
-    display: flex;
     flex-direction: column;
+    width: 90%;
+    height: 80%;
     align-items: center;
-    width: 45%;
+    justify-content: center;
 }
 
-.projetos-menu h1{
-    font-size: 1rem;
-}
-
-.projetos-botao{
-    position: relative;
-    background: none;
-    border: 0;
-    color: var(--cor-azul);
-    font-size: 1rem;
-    cursor: pointer;
-    transition: .5s;
-}
-
-.projetos-botao:hover{
-    text-shadow: 0px 0px 30px var(--cor-azul);
-}
-
-.container-projeto-box{
-    width: 100%;
-    line-height: 50px;
-    margin-top: 10px;
-}
-
-.projeto-box{
-    position: relative;
-    background-color: white;
-    width: 100%;
-    line-height: 50px;
-    margin-top: 10px;
-    border-radius: 0px 30px 30px 0px;
-    cursor: pointer;
-    transition: .5s;
-}
-
-.projeto-box a{
-    text-decoration: none;
-    font-size: 0.5rem;
-    color: black;
-    display: block;
-    transition: .5s;
-    line-height: 50px;
-    padding-left: 90px;
-}
-
-.sub-menu{
-    display: block;
-    background-color: var(--cor-azul-escuro);
-    width: 100%;
-}
-
-.sub-menu a{
-    padding-left: 90px;
-    padding-top: 10px;
-    padding-right: 50px;
+.projetos-container h2{
     color: white;
-    transition: .5s;
-    font-size: 0.4rem;
-    text-align: justify;
+    font-size: 0.6rem;
 }
 
-.sub-menu a:hover{
-    color: #ffffffad;
-}
-
-.projeto-box:hover{
-    border-radius: 0px 30px 0px 0px;
-}
-
-/* BOTOES DE TRANSICAO */
-.projetos-container-botoes{
+.container-imagens{
     position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 75%;
-    margin-top: 15px;
+    width: 90%;
+    height: 70%;
+    background-color: white;
+    margin: 15px 0;
 }
 
-.projetos-botao{
-    position: relative;
-    background: none;
-    border: 0;
-    color: var(--cor-azul);
-    font-size: 1rem;
-    cursor: pointer;
-    text-shadow: 0px 0px 30px var(--cor-azul);
-    transition: .5s;
-}
-
-.projetos-botao:hover{
-    text-shadow: 0px 0px 50px var(--cor-azul);
-}
-
-.menu-number{
+.projetos-container p{
     color: white;
-    font-size: 0.35rem;
-    animation: mostrarBox .5s;
-    animation-fill-mode: forwards;
+    font-size: 0.4rem;
+    text-align: center;
+    width: 90%;
 }
 
-@media (max-width: 1156px){
-    .projeto-box a{
-        font-size: 0.3rem;
-    }
-
-    .sub-menu a{
-        font-size: 0.2rem;
-    }
-
-    .projeto-tela{
-        height: 60%;
-    }
-    
+.imagem-projeto{
+    position: relative;
+    height: 100%;
+    border: 1px solid var(--cor-azul-escuro);
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center center;
+    animation-timing-function: ease-in-out;
+    transition: 1s;
 }
 
- @media (max-width: 850px){
-    .projetos-container{
-        justify-content: center;
-        flex-direction: column-reverse;
-    }
-
-    .projetos-menu{
-        width: 100%;
-        align-items:flex-start;
-    }
-
-    .projeto-box{
-        width: 90%;
-    }
-
-    .projetos-menu h1{
-        width: 100%;
-        text-align: center;
-    }
-
-    .projeto-tela{
-        display: none;
-    }
-
-    .projetos-container-botoes{
-        width: 100%;
-        padding: 0 30px;
-    }
-} 
-
-
-@media (max-width: 409px){
-    .projetos-menu h1{
-        font-size: 0.8rem;
-    }
+.imagem-projeto{
+    background-image: url("./../img/projetos/cavus.jpg");
 }
 
-@keyframes showImage {
-    0%{
-        opacity: 0%;
-    }
-
-    100%{
-        opacity: 100%;
-    }
-}
-
-@keyframes hiddenImage{
-    0%{
-        opacity: 100%;
-    }
-
-    100%{
-        opacity: 0%;
-    }
+.imagem-projeto:hover{
+    flex-grow: 5;
 }
