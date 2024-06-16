@@ -1,13 +1,13 @@
 [
     {
         "nome": "Sphynx - Segurança Escolar",
-        "descricao": "Projeto com o objetivo de criar um sistema de segurançade alta confiabilidade e baixo custo para residênciase instuições de ensino.",
+        "descricao": "Projeto com o objetivo de criar um sistema de segurança de alta confiabilidade e baixo custo para residências e instuições de ensino.",
         "url": "https://github.com/orgs/Cliyo/repositories",
         "imagem": "/assets/img/projetos/sphynx.jpg"
     },
     {
         "nome": "Socius - Gerência de Clubes",
-        "descricao": "Projeto com o objetivo de gerenciar um clube, contando comoperações de CRUD para novos sócios, locais e agendamentos.",
+        "descricao": "Projeto com o objetivo de gerenciar um clube, contando com operações de CRUD para novos sócios, locais e agendamentos.",
         "url": "https://github.com/PedroVidalDev/Socius",
         "imagem": "/assets/img/projetos/socius.jpg"
     },
