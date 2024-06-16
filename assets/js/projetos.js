@@ -10,6 +10,8 @@ const botoesProjetos = document.querySelectorAll("#projetos-botao");
 let i = 0;
 const partesLista = dividirLista(listaProjetos, 4);
 
+escrever(tituloProjeto, "");
+escrever(descricaoProjeto, "");
 adicionarProjetos(partesLista[i]);
 
 function adicionarProjetos(projetos){
