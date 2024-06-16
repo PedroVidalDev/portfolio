@@ -20,10 +20,7 @@ function adicionarProjetos(projetos){
         divImagem.style.backgroundImage = `url("${projeto.imagem}")`;
         divImagem.addEventListener("mouseover", () => {
             escrever(tituloProjeto, projeto.nome, 40);
-            if(window.innerWidth > 480){
-                escrever(descricaoProjeto, projeto.descricao, 25);
-            }
-            
+            escrever(descricaoProjeto, projeto.descricao, 25);     
         })
     
         divImagem.addEventListener("mouseout", () => {
