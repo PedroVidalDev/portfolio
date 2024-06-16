@@ -4,8 +4,16 @@
         "url": "/assets/docs/CertificadoFatec.pdf"
     },
     {
-        "nome": "Formação Java e Spring",
+        "nome": "Formação Java e Spring Boot",
         "url": "https://cursos.alura.com.br/degree/certificate/10d216f2-a7c6-4b3a-b96f-32b7fae85217"
+    },
+    {
+        "nome": "Formação Java Web",
+        "url": "https://cursos.alura.com.br/user/pedrohvidals/degree-java-web-spring-boot-596328/certificate?lang=pt_BR"
+    },
+    {
+        "nome": "Bootcamp Santander Java",
+        "url": "https://www.dio.me/certificate/XCWNDJCK/share"
     },
     {
         "nome": "Formação Node.js e Express",
@@ -18,9 +26,5 @@
     {
         "nome": "Formação Javascript",
         "url": "https://cursos.alura.com.br/degree/certificate/6f6177cc-cde9-44c3-bc5e-2afbdc733bbf?lang=pt_BR"
-    },
-    {
-        "nome": "Bootcamp Santander Java",
-        "url": "https://www.dio.me/certificate/XCWNDJCK/share"
     }
 ]
