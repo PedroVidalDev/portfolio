@@ -22,6 +22,10 @@ function adicionarProjetos(projetos){
             escrever(tituloProjeto, projeto.nome, 40);
             escrever(descricaoProjeto, projeto.descricao, 25);     
         })
+
+        divImagem.addEventListener("click", () => {
+            window.location.href = projeto.url
+        })
     
         divImagem.addEventListener("mouseout", () => {
             deletar(tituloProjeto);
