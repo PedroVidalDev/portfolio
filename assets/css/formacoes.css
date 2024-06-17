@@ -6,7 +6,7 @@
     height: 100vh;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--cor-background);
+    background-image: linear-gradient(var(--cor-background-dois), var(--cor-background-tres) 100% );
 }
 
 /* IMAGEM ICONE */

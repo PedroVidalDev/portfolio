@@ -7,7 +7,7 @@
     height: 100vh;
     align-items: center;
     justify-content: center;
-    background-color: var(--cor-background);
+    background-image: linear-gradient(var(--cor-background), var(--cor-background-dois) 100% );
 }
 
 .home-container{

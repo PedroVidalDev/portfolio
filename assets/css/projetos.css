@@ -6,7 +6,7 @@
     height: 90vh;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--cor-background);
+    background-image: linear-gradient(var(--cor-background-quatro), var(--cor-background-cinco) 100% );
 }
 
 .projetos h1{

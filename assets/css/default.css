@@ -12,7 +12,13 @@ html{
 }
 
 :root{
-    --cor-background: #000b0e;
+    --cor-background: #00080a;
+    --cor-background-dois: #001014;
+    --cor-background-tres: #001820;
+    --cor-background-quatro:rgb(1, 28, 37);
+    --cor-background-cinco:rgb(1, 35, 48);
+    --cor-background-seis:rgb(1, 31, 43);
+    
     --cor-background-pouco-destaque: #00141a;
     --cor-azul: #00D1FF;
     --cor-azul-escuro: #00181f;
