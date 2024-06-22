@@ -8,7 +8,8 @@ const descricaoProjeto = document.querySelector("#descricao-projeto");
 const botoesProjetos = document.querySelectorAll("#projetos-botao");
 
 let i = 0;
-const partesLista = dividirLista(listaProjetos, 4);
+const partesLista = dividirLista(listaProjetos, listaProjetos.length / 2);
+console.log(partesLista)
 
 escrever(tituloProjeto, "");
 escrever(descricaoProjeto, "");

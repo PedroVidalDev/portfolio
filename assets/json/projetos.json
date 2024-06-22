@@ -25,7 +25,7 @@
     },
     {
         "nome": "Liber Alura",
-        "descricao": "Projeto com o objetivo de criar uma Rest API com Node.js eExpress.js que realize o gerenciamento de uma livraria, feitodurante o curso de Express da Alura.",
+        "descricao": "Projeto com o objetivo de criar uma Rest API com Node.js e Express.js que realize o gerenciamento de uma livraria, feito durante o curso de Express da Alura.",
         "url": "https://github.com/PedroVidalDev/Projeto-Introducao-NodeJS-Express-Alura",
         "imagem": "/assets/img/projetos/livraria.jpg"
     },
@@ -34,6 +34,12 @@
         "descricao": "O objetivo do projeto é fixar conhecimentos relacionados ao Sequelize.",
         "url": "https://github.com/PedroVidalDev/Series-Alura",
         "imagem": "/assets/img/projetos/series.jpg"
+    },
+    {
+        "nome": "Elisoft",
+        "descricao": "Sistema de manutenção de produtos e vendas, realizando cálculos de fluxo de caixa.",
+        "url": "https://github.com/PedroVidalDev/Elisoft",
+        "imagem": "/assets/img/projetos/elisoft.jpeg"
     },
     {
         "nome": "Cavus Alura",
