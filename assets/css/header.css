@@ -8,6 +8,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 30px;
+    backdrop-filter: blur(20px) brightness(20%);
 }
 
 .header-icon{
