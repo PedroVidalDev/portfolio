@@ -49,6 +49,7 @@ header nav ul li a:hover{
 .menu-icon{
     display: none!important;
     color: white;
+    font-size: 0.5rem;
 }
 
 .mostrarMenu{
