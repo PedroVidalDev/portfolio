@@ -31,3 +31,7 @@ h1{
     text-shadow: 4px 2px 0px var(--cor-azul);
     transition: .5s;
 }
+
+a{
+    text-decoration: none;
+}
