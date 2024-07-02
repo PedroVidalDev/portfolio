@@ -1,12 +1,13 @@
-import listaProjetos from "../json/projetos.json" assert {type: "json"};
 import dividirLista from "./utils/dividirLista.js";
 import { deletar, escrever } from "./utils/efeitoEscrever.js";
+import { jsonParaLista } from "./utils/resgatarJsonParaLista.js";
 
 const containerImagens = document.querySelector("#container-imagens");
 const tituloProjeto = document.querySelector("#titulo-projeto");
 const descricaoProjeto = document.querySelector("#descricao-projeto");
 const botoesProjetos = document.querySelectorAll("#projetos-botao");
 
+let listaProjetos = await jsonParaLista("../assets/json/projetos.json")
 let i = 0;
 const partesLista = dividirLista(listaProjetos, listaProjetos.length / 2);
 console.log(partesLista)
