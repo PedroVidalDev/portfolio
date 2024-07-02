@@ -1,9 +1,11 @@
-import listaFormacoes from "../json/formacoes.json" assert {type: "json"};
 import dividirLista from "./utils/dividirLista.js";
+import { jsonParaLista } from "./utils/resgatarJsonParaLista.js";
 
 const formacaoContainerAjuste = document.querySelector("#formacoes-container-ajuste");
 const botoesFormacoes = document.querySelectorAll("#formacoes-botao");
 const legendaBotao = document.querySelector("#menu-formacoes-number");
+
+let listaFormacoes = await jsonParaLista("../assets/json/formacoes.json");
 
 let i = 0;
 const partesLista = dividirLista(listaFormacoes, 4);
