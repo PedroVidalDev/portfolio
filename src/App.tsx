@@ -1,10 +1,5 @@
 function App() {
-
-  return (
-    <>
-      dsadsa
-    </>
-  )
+  return <>dsadsa</>
 }
 
 export default App
