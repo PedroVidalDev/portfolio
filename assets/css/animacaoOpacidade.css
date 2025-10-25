@@ -1,9 +1,0 @@
-/* ANIMACAO TRANSICAO BOX */
-@keyframes mostrarBox {
-    0%{
-        opacity: 0%;
-    }
-    100%{
-        opacity: 100%;
-    }
-}
