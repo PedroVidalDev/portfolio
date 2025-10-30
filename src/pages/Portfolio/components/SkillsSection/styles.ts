@@ -14,21 +14,12 @@ export const SkillsSectionContainer = styled.div`
 
 export const SkillsContent = styled.div`
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 8px;
 
-  max-height: 60vh;
-
-  @media (max-width: 727px) {
-    grid-template-columns: auto auto;
+  @media (max-width: 470px) {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
-
-  @media (max-width: 420px) {
-    grid-template-columns: auto;
-  }
-
-  overflow-y: scroll;
-  overflow-x: hidden;
 `
 
 export const SkillItem = styled.div`
