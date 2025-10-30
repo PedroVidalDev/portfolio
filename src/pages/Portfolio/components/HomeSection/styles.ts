@@ -1,0 +1,116 @@
+import styled, { css } from 'styled-components'
+
+export const HomeSectionContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 0 10%;
+
+  background-color: ${({ theme }) => theme.COLORS.DARKER_PRIMARY};
+`
+
+export const TextsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+
+  gap: 8px;
+
+  span {
+    ${({ theme }) => css`
+      font-family: ${theme.FONTS.PRIMARY};
+      font-size: ${theme.FONT_SIZE.SMALL};
+      color: ${theme.COLORS.GRAY_700};
+      font-weight: ${theme.FONT_WEIGHT.MEDIUM};
+    `};
+  }
+
+  h1 {
+    ${({ theme }) => css`
+      font-family: ${theme.FONTS.SECONDARY};
+      font-size: ${theme.FONT_SIZE.XXXXLARGE};
+      color: ${theme.COLORS.GRAY_0};
+      font-weight: ${theme.FONT_WEIGHT.MEDIUM};
+
+      span {
+        font-family: ${theme.FONTS.SECONDARY};
+        font-size: ${theme.FONT_SIZE.XXXXLARGE};
+        color: ${theme.COLORS.PRIMARY};
+        font-weight: ${theme.FONT_WEIGHT.MEDIUM};
+      }
+    `};
+  }
+
+  p {
+    ${({ theme }) => css`
+      font-family: ${theme.FONTS.PRIMARY};
+      font-size: ${theme.FONT_SIZE.SMALL};
+      color: ${theme.COLORS.GRAY_400};
+      font-weight: ${theme.FONT_WEIGHT.MEDIUM};
+    `};
+  }
+`
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+  gap: 16px;
+`
+
+export const ImagesContainer = styled.div`
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 24px;
+
+  width: 50%;
+`
+
+export const ProfileImage = styled.img`
+  width: 500px;
+  height: 500px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 8px solid ${({ theme }) => theme.COLORS.PRIMARY};
+`
+
+export const SocialContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  justify-content: space-between;
+
+  gap: 24px;
+`
+
+export const Social = styled.div`
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+
+  background-color: ${({ theme }) => theme.COLORS.PRIMARY};
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+`
