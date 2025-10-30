@@ -23,6 +23,10 @@ export const ExperienceContent = styled.div`
   display: grid;
   grid-template-columns: auto auto;
   gap: 24px;
+
+  @media (max-width: 727px) {
+    grid-template-columns: auto;
+  }
 `
 
 export const ExperienceItem = styled.div`

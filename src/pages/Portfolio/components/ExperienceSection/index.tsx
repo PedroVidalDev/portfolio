@@ -18,7 +18,7 @@ export const ExperienceSection = () => {
   return (
     <ExperienceContainer>
       <ExperienceHeader>
-        <Title>
+        <Title style={{ textAlign: 'center' }}>
           <span> My </span> Experience
         </Title>
       </ExperienceHeader>

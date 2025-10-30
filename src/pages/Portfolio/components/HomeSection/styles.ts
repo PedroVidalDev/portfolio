@@ -9,8 +9,13 @@ export const HomeSectionContainer = styled.div`
   height: 95vh;
 
   padding: 64px 10%;
+  gap: 24px;
 
   background-color: ${({ theme }) => theme.COLORS.DARKER_PRIMARY};
+
+  @media (max-width: 925px) {
+    justify-content: center;
+  }
 `
 
 export const TextsContainer = styled.div`
@@ -23,6 +28,8 @@ export const TextsContainer = styled.div`
 
   span {
     ${({ theme }) => css`
+      width: 100%;
+
       font-family: ${theme.FONTS.PRIMARY};
       font-size: ${theme.FONT_SIZE.SMALL};
       color: ${theme.COLORS.GRAY_700};
@@ -36,6 +43,8 @@ export const TextsContainer = styled.div`
 
   p {
     ${({ theme }) => css`
+      width: 100%;
+
       font-family: ${theme.FONTS.PRIMARY};
       font-size: ${theme.FONT_SIZE.SMALL};
       color: ${theme.COLORS.GRAY_400};
@@ -46,11 +55,19 @@ export const TextsContainer = styled.div`
       }
     `};
   }
+
+  @media (max-width: 925px) {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 export const ButtonsContainer = styled.div`
   display: flex;
   gap: 16px;
+
+  width: 100%;
 `
 
 export const ImagesContainer = styled.div`
@@ -63,6 +80,10 @@ export const ImagesContainer = styled.div`
   gap: 24px;
 
   width: 50%;
+
+  @media (max-width: 925px) {
+    display: none;
+  }
 `
 
 export const ProfileImage = styled.img`

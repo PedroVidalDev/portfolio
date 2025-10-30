@@ -2,6 +2,8 @@ import styled, { css } from 'styled-components'
 
 export const Title = styled.h2`
   ${({ theme }) => css`
+    width: 100%;
+
     font-family: ${theme.FONTS.SECONDARY};
     font-size: ${theme.FONT_SIZE.XXXXLARGE};
     color: ${theme.COLORS.GRAY_0};
