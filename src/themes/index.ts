@@ -1,6 +1,7 @@
 export const themes = {
   COLORS: {
     DARKER_PRIMARY: '#0c0b0d',
+    DARK_PRIMARY: '#19181a',
     PRIMARY: '#520dc3',
 
     GRAY_0: '#ffffff',
@@ -22,7 +23,6 @@ export const themes = {
     GRAY_800: '#858585',
     GRAY_850: '#7d7d7d',
     GRAY_900: '#757575',
-    GRAY_950: '#181a19',
     GRAY_1000: '#000000',
   },
   FONTS: {

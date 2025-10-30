@@ -6,7 +6,7 @@ export const HomeSectionContainer = styled.div`
   justify-content: space-between;
 
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
 
   padding: 0 10%;
 

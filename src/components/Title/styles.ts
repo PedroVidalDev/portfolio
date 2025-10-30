@@ -8,10 +8,10 @@ export const Title = styled.h2`
     font-weight: ${theme.FONT_WEIGHT.MEDIUM};
 
     span {
-      font-family: ${theme.FONTS.SECONDARY};
-      font-size: ${theme.FONT_SIZE.XXXXLARGE};
-      color: ${theme.COLORS.PRIMARY};
-      font-weight: ${theme.FONT_WEIGHT.MEDIUM};
+      font-family: ${theme.FONTS.SECONDARY}!important;
+      font-size: ${theme.FONT_SIZE.XXXXLARGE}!important;
+      color: ${theme.COLORS.PRIMARY}!important;
+      font-weight: ${theme.FONT_WEIGHT.MEDIUM}!important;
     }
   `};
 `
