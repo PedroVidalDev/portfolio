@@ -30,22 +30,6 @@ export const TextsContainer = styled.div`
     `};
   }
 
-  h1 {
-    ${({ theme }) => css`
-      font-family: ${theme.FONTS.SECONDARY};
-      font-size: ${theme.FONT_SIZE.XXXXLARGE};
-      color: ${theme.COLORS.GRAY_0};
-      font-weight: ${theme.FONT_WEIGHT.MEDIUM};
-
-      span {
-        font-family: ${theme.FONTS.SECONDARY};
-        font-size: ${theme.FONT_SIZE.XXXXLARGE};
-        color: ${theme.COLORS.PRIMARY};
-        font-weight: ${theme.FONT_WEIGHT.MEDIUM};
-      }
-    `};
-  }
-
   p {
     ${({ theme }) => css`
       font-family: ${theme.FONTS.PRIMARY};

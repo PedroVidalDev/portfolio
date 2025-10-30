@@ -9,15 +9,16 @@ import {
   TextsContainer,
 } from './styles'
 import { Icon } from 'components/Icon'
+import { Title } from 'components/Title/styles'
 
 export const HomeSection = () => {
   return (
     <HomeSectionContainer>
       <TextsContainer>
         <span>Fullstack Software Developer</span>
-        <h1>
+        <Title>
           <span> Hey! </span> I'm <br /> Pedro Vidal
-        </h1>
+        </Title>
         <p>
           I am a passionate software developer with experience in building web
           applications using the MERN stack, always eager to learn new
