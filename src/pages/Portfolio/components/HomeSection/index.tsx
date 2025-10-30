@@ -10,6 +10,7 @@ import {
 } from './styles'
 import { Icon } from 'components/Icon'
 import { Title } from 'components/Title/styles'
+import { SOCIALS } from './consts'
 
 export const HomeSection = () => {
   return (
@@ -27,7 +28,7 @@ export const HomeSection = () => {
 
         <ButtonsContainer>
           <Button label='See my projects' type='primary' onClick={() => {}} />
-          <Button label='About me' type='secondary' onClick={() => {}} />
+          <Button label='Contact me' type='secondary' onClick={() => {}} />
         </ButtonsContainer>
       </TextsContainer>
       <ImagesContainer>
@@ -36,15 +37,14 @@ export const HomeSection = () => {
           alt='Profile Image'
         />
         <SocialContainer>
-          <Social>
-            <Icon name='IoLogoLinkedin' color='PRIMARY' size={24} />
-          </Social>
-          <Social>
-            <Icon name='IoLogoGithub' color='PRIMARY' size={24} />
-          </Social>
-          <Social>
-            <Icon name='IoLogoInstagram' color='PRIMARY' size={24} />
-          </Social>
+          {SOCIALS.map((social) => (
+            <Social
+              key={social.url}
+              onClick={() => window.open(social.url, '_blank')}
+            >
+              <Icon name={social.iconName} color='PRIMARY' size={24} />
+            </Social>
+          ))}
         </SocialContainer>
       </ImagesContainer>
     </HomeSectionContainer>
