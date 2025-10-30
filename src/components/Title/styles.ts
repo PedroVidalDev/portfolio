@@ -14,4 +14,14 @@ export const Title = styled.h2`
       font-weight: ${theme.FONT_WEIGHT.MEDIUM}!important;
     }
   `};
+
+  @media (max-width: 1333px) {
+    ${({ theme }) => css`
+      font-size: ${theme.FONT_SIZE.XXXLARGE};
+
+      span {
+        font-size: ${theme.FONT_SIZE.XXXLARGE}!important;
+      }
+    `};
+  }
 `

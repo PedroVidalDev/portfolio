@@ -26,7 +26,14 @@ export const ButtonContainer = styled.button<ButtonContainerProps>`
   `};
 
   transition: filter 0.2s;
+
   &:hover {
     filter: brightness(0.7);
+  }
+
+  @media (max-width: 1333px) {
+    ${({ theme }) => css`
+      font-size: ${theme.FONT_SIZE.XSMALL};
+    `};
   }
 `

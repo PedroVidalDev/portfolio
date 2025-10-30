@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
         position: relative;
         display: flex;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background-color: #FFF;
     }
 `

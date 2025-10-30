@@ -6,9 +6,9 @@ export const HomeSectionContainer = styled.div`
   justify-content: space-between;
 
   width: 100%;
-  min-height: 100vh;
+  height: 95vh;
 
-  padding: 0 10%;
+  padding: 64px 10%;
 
   background-color: ${({ theme }) => theme.COLORS.DARKER_PRIMARY};
 `
@@ -27,6 +27,10 @@ export const TextsContainer = styled.div`
       font-size: ${theme.FONT_SIZE.SMALL};
       color: ${theme.COLORS.GRAY_700};
       font-weight: ${theme.FONT_WEIGHT.MEDIUM};
+
+      @media (max-width: 1333px) {
+        font-size: ${theme.FONT_SIZE.XSMALL};
+      }
     `};
   }
 
@@ -36,6 +40,10 @@ export const TextsContainer = styled.div`
       font-size: ${theme.FONT_SIZE.SMALL};
       color: ${theme.COLORS.GRAY_400};
       font-weight: ${theme.FONT_WEIGHT.MEDIUM};
+
+      @media (max-width: 1333px) {
+        font-size: ${theme.FONT_SIZE.XSMALL};
+      }
     `};
   }
 `
@@ -65,6 +73,11 @@ export const ProfileImage = styled.img`
   object-fit: cover;
 
   border: 8px solid ${({ theme }) => theme.COLORS.PRIMARY};
+
+  @media (max-width: 1333px) {
+    width: 340px;
+    height: 340px;
+  }
 `
 
 export const SocialContainer = styled.div`
@@ -97,5 +110,15 @@ export const Social = styled.div`
 
   &:hover {
     opacity: 0.8;
+  }
+
+  @media (max-width: 1333px) {
+    width: 40px;
+    height: 40px;
+
+    svg {
+      width: 14px;
+      height: 14px;
+    }
   }
 `
