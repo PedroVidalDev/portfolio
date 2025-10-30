@@ -1,4 +1,4 @@
-import * as IoIcons from 'react-icons/io5'
+import * as IoIcons from 'react-icons/fa6'
 
 type SocialType = {
   iconName: keyof typeof IoIcons
@@ -7,15 +7,15 @@ type SocialType = {
 
 export const SOCIALS: SocialType[] = [
   {
-    iconName: 'IoLogoGithub',
+    iconName: 'FaGithub',
     url: 'https://github.com/PedroVidalDev',
   },
   {
-    iconName: 'IoLogoLinkedin',
+    iconName: 'FaLinkedinIn',
     url: 'https://www.linkedin.com/in/pedro-vidal-5a4509255/',
   },
   {
-    iconName: 'IoLogoInstagram',
+    iconName: 'FaInstagram',
     url: 'https://www.instagram.com/vidal_pdr?igsh=MXh1c2t3ZTFta2lmdg==',
   },
 ]

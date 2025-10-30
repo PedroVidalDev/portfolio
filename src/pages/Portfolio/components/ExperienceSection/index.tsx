@@ -29,7 +29,7 @@ export const ExperienceSection = () => {
             onClick={() => handleClickItem(item.link)}
           >
             <ExperienceIcon>
-              <Icon name='IoNewspaperSharp' color='GRAY_0' size={24} />
+              <Icon name='FaNewspaper' color='GRAY_0' size={24} />
             </ExperienceIcon>
             <ExperienceDetails>
               <span>
