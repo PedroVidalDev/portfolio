@@ -1,4 +1,5 @@
 import { ExperienceSection } from './components/ExperienceSection'
+import { FooterSection } from './components/FooterSection'
 import { HomeSection } from './components/HomeSection'
 import { SkillsSection } from './components/SkillsSection'
 
@@ -10,6 +11,7 @@ export const Portfolio = () => {
       <HomeSection />
       <ExperienceSection />
       <SkillsSection />
+      <FooterSection />
     </PortfolioContainer>
   )
 }
