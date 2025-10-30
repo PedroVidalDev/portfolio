@@ -27,8 +27,20 @@ export const HomeSection = () => {
         </p>
 
         <ButtonsContainer>
-          <Button label='See my projects' type='primary' onClick={() => {}} />
-          <Button label='Contact me' type='secondary' onClick={() => {}} />
+          <Button
+            label='See my projects'
+            type='primary'
+            onClick={() =>
+              window.open('https://github.com/PedroVidalDev', '_blank')
+            }
+          />
+          <Button
+            label='Contact me'
+            type='secondary'
+            onClick={() =>
+              window.open('mailto:pedrohvidals@gmail.com', '_blank')
+            }
+          />
         </ButtonsContainer>
       </TextsContainer>
       <ImagesContainer>
