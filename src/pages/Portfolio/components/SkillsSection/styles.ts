@@ -17,6 +17,8 @@ export const SkillsContent = styled.div`
   grid-template-columns: auto auto auto;
   gap: 8px;
 
+  max-height: 60vh;
+
   @media (max-width: 727px) {
     grid-template-columns: auto auto;
   }
@@ -24,6 +26,9 @@ export const SkillsContent = styled.div`
   @media (max-width: 420px) {
     grid-template-columns: auto;
   }
+
+  overflow-y: scroll;
+  overflow-x: hidden;
 `
 
 export const SkillItem = styled.div`
@@ -62,6 +67,15 @@ export const SkillItem = styled.div`
         font-size: ${theme.FONT_SIZE.XSMALL};
       }
     `};
+  }
+
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.75;
+    transform: scale(1.02);
   }
 `
 
