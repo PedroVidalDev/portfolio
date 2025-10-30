@@ -36,13 +36,13 @@ export const HomeSection = () => {
         />
         <SocialContainer>
           <Social>
-            <Icon name='IoLogoLinkedin' color='GRAY_0' size={24} />
+            <Icon name='IoLogoLinkedin' color='PRIMARY' size={24} />
           </Social>
           <Social>
-            <Icon name='IoLogoGithub' color='GRAY_0' size={24} />
+            <Icon name='IoLogoGithub' color='PRIMARY' size={24} />
           </Social>
           <Social>
-            <Icon name='IoLogoInstagram' color='GRAY_0' size={24} />
+            <Icon name='IoLogoInstagram' color='PRIMARY' size={24} />
           </Social>
         </SocialContainer>
       </ImagesContainer>

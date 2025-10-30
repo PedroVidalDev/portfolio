@@ -99,7 +99,8 @@ export const Social = styled.div`
 
   border-radius: 50%;
 
-  background-color: ${({ theme }) => theme.COLORS.PRIMARY};
+  background-color: transparent;
+  border: 2px solid ${({ theme }) => theme.COLORS.PRIMARY};
 
   display: flex;
 
