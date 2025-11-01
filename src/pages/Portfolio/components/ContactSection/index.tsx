@@ -39,13 +39,13 @@ export const ContactSection = () => {
     const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
     const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
-    if (
-      !formData.name ||
-      !formData.subject ||
-      !formData.email ||
-      !formData.message
-    ) {
+    if (!formData.name || !formData.subject || !formData.message) {
       toastEmmiter('Please fill in all required fields.', 'error')
+      return
+    }
+
+    if (formData.email && !/\S+@\S+\.\S+/.test(formData.email)) {
+      toastEmmiter('Please enter a valid email address.', 'error')
       return
     }
 
