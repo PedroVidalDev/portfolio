@@ -1,3 +1,4 @@
+import { ContactSection } from './components/ContactSection'
 import { ExperienceSection } from './components/ExperienceSection'
 import { FooterSection } from './components/FooterSection'
 import { HomeSection } from './components/HomeSection'
@@ -11,6 +12,7 @@ export const Portfolio = () => {
       <HomeSection />
       <ExperienceSection />
       <SkillsSection />
+      <ContactSection />
       <FooterSection />
     </PortfolioContainer>
   )

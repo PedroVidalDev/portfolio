@@ -2,9 +2,12 @@ import styled, { css } from 'styled-components'
 
 interface ButtonContainerProps {
   type: 'primary' | 'secondary'
+  hide: boolean
 }
 
 export const ButtonContainer = styled.button<ButtonContainerProps>`
+  display: ${({ hide }) => (hide ? 'none' : 'block')};
+
   padding: 12px 24px;
 
   border-radius: 8px;

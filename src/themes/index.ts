@@ -22,7 +22,7 @@ export const themes = {
     GRAY_750: '#8c8c8c',
     GRAY_800: '#858585',
     GRAY_850: '#7d7d7d',
-    GRAY_900: '#757575',
+    GRAY_900: '#1c1c1cff',
     GRAY_1000: '#000000',
   },
   FONTS: {
