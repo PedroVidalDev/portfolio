@@ -21,9 +21,9 @@ export const HomeSection = () => {
           <span> Hey! </span> I'm <br /> Pedro Vidal
         </Title>
         <p>
-          I am a passionate software developer with experience in building web
-          applications using the MERN stack, always eager to learn new
-          technologies and improve my skills.
+          I am a passionate software developer with experience in building
+          fullstack applications with a large number of stacks, always eager to
+          learn new technologies and improve my skills.
         </p>
 
         <ButtonsContainer>
