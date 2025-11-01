@@ -20,13 +20,9 @@ export const ExperienceHeader = styled.div`
 `
 
 export const ExperienceContent = styled.div`
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex-direction: column-reverse;
   gap: 24px;
-
-  @media (max-width: 727px) {
-    grid-template-columns: auto;
-  }
 `
 
 export const ExperienceItem = styled.div`
@@ -65,7 +61,13 @@ export const ExperienceIcon = styled.div`
 
 export const ExperienceDetails = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+
+  width: 100%;
+
+  align-items: center;
+  justify-content: space-between;
+
   gap: 4px;
 
   span {

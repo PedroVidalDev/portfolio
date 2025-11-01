@@ -32,10 +32,15 @@ export const ExperienceSection = () => {
               <Icon name='FaNewspaper' color='GRAY_0' size={24} />
             </ExperienceIcon>
             <ExperienceDetails>
-              <span>
-                {item.period} ({item.role})
-              </span>
-              <h3>{item.company}</h3>
+              <div>
+                <h3>
+                  {item.company} | {item.role}
+                </h3>
+                <span> {item.skills.join(', ')} </span>
+              </div>
+              <div>
+                <span>{item.period}</span>
+              </div>
             </ExperienceDetails>
           </ExperienceItem>
         ))}
