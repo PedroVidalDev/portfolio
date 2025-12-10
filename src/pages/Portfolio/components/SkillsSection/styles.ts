@@ -4,7 +4,7 @@ export const SkillsSectionContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  background-color: ${({ theme }) => theme.COLORS.DARKER_PRIMARY};
+  background-color: ${({ theme }) => theme.COLORS.DARK_PRIMARY};
 
   width: 100%;
 

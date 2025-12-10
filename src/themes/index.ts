@@ -2,7 +2,7 @@ export const themes = {
   COLORS: {
     DARKER_PRIMARY: '#0c0b0d',
     DARK_PRIMARY: '#19181a',
-    PRIMARY: '#520dc3',
+    PRIMARY: '#860dc3ff',
 
     GRAY_0: '#ffffff',
     GRAY_50: '#f7f7f7',
@@ -27,7 +27,7 @@ export const themes = {
   },
   FONTS: {
     PRIMARY: "'Poppins', sans-serif",
-    SECONDARY: "'Lora', sans-serif",
+    SECONDARY: "'Poppins', sans-serif",
   },
   FONT_SIZE: {
     XXSMALL: '8px',
