@@ -78,6 +78,10 @@ export const SkillItem = styled.div`
   height: 200px;
   gap: 8px;
 
+  @media (max-width: 1333px) {
+    height: 180px;
+  }
+
   h2 {
     ${({ theme }) => css`
       font-family: ${theme.FONTS.SECONDARY};
