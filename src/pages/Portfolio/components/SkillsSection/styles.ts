@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css, keyframes } from 'styled-components'
 
 export const SkillsSectionContainer = styled.div`
   display: flex;
@@ -8,18 +8,60 @@ export const SkillsSectionContainer = styled.div`
 
   width: 100%;
 
-  padding: 64px 10%;
+  padding: 64px 0;
   gap: 24px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  overflow: hidden;
+`
+
+const CarouselAnimation = keyframes`
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
 `
 
 export const SkillsContent = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  display: flex;
+
+  width: 100%;
+
+  padding: 16px 0;
+
+  overflow: hidden;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`
+
+interface SkillsWrapperProps {
+  reverse?: boolean
+}
+
+export const SkillsWrapper = styled.div<SkillsWrapperProps>`
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding-right: 8px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   gap: 8px;
 
-  @media (max-width: 470px) {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
+  animation: ${CarouselAnimation} 20s linear infinite
+    ${({ reverse }) => (reverse ? 'reverse' : 'normal')};
 `
 
 export const SkillItem = styled.div`
@@ -28,10 +70,12 @@ export const SkillItem = styled.div`
 
   align-items: flex-start;
 
-  background-color: ${({ theme }) => theme.COLORS.DARK_PRIMARY};
+  background-color: ${({ theme }) => theme.COLORS.DARKER_PRIMARY};
   border-radius: 8px;
 
-  padding: 12px 16px;
+  padding: 16px;
+  min-width: 380px;
+  height: 200px;
   gap: 8px;
 
   h2 {
@@ -81,4 +125,23 @@ export const IconContainer = styled.div`
 
   background-color: ${({ theme }) => theme.COLORS.PRIMARY};
   border-radius: 8px;
+`
+
+export const TechType = styled.span`
+  ${({ theme }) => css`
+    border: 1px solid ${theme.COLORS.PRIMARY};
+    border-radius: 4px;
+    padding: 2px 6px;
+
+    font-family: ${theme.FONTS.PRIMARY};
+    font-size: ${theme.FONT_SIZE.SMALL};
+    color: ${theme.COLORS.PRIMARY};
+    font-weight: ${theme.FONT_WEIGHT.REGULAR};
+
+    background-color: ${theme.COLORS.DARK_PRIMARY};
+
+    @media (max-width: 1333px) {
+      font-size: ${theme.FONT_SIZE.XSMALL};
+    }
+  `};
 `

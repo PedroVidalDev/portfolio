@@ -8,6 +8,8 @@ import {
   SkillItem,
   SkillsContent,
   SkillsSectionContainer,
+  SkillsWrapper,
+  TechType,
 } from './styles'
 
 export const SkillsSection = () => {
@@ -17,15 +19,56 @@ export const SkillsSection = () => {
         <span>My</span> Skills
       </Title>
       <SkillsContent>
-        {SKILLS.map((skill, index) => (
-          <SkillItem key={index}>
-            <IconContainer>
-              <Icon name={skill.icon} color='GRAY_0' size={22} />
-            </IconContainer>
-            <h2>{skill.name}</h2>
-            <p>{skill.description}</p>
-          </SkillItem>
-        ))}
+        <SkillsWrapper>
+          {[...SKILLS].map((skill, index) => (
+            <SkillItem key={index}>
+              <IconContainer>
+                <Icon name={skill.icon} color='GRAY_0' size={22} />
+              </IconContainer>
+              <h2>{skill.name}</h2>
+              <TechType>{skill.type}</TechType>
+              <p>{skill.description}</p>
+            </SkillItem>
+          ))}
+        </SkillsWrapper>
+        <SkillsWrapper aria-hidden>
+          {[...SKILLS].map((skill, index) => (
+            <SkillItem key={index}>
+              <IconContainer>
+                <Icon name={skill.icon} color='GRAY_0' size={22} />
+              </IconContainer>
+              <h2>{skill.name}</h2>
+              <TechType>{skill.type}</TechType>
+              <p>{skill.description}</p>
+            </SkillItem>
+          ))}
+        </SkillsWrapper>
+      </SkillsContent>
+      <SkillsContent>
+        <SkillsWrapper reverse={true}>
+          {[...SKILLS].map((skill, index) => (
+            <SkillItem key={index}>
+              <IconContainer>
+                <Icon name={skill.icon} color='GRAY_0' size={22} />
+              </IconContainer>
+              <h2>{skill.name}</h2>
+              <TechType>{skill.type}</TechType>
+              <p>{skill.description}</p>
+            </SkillItem>
+          ))}
+        </SkillsWrapper>
+        <SkillsWrapper reverse={true} aria-hidden>
+          {[...SKILLS].map((skill, index) => (
+            <SkillItem key={index}>
+              <IconContainer>
+                <Icon name={skill.icon} color='GRAY_0' size={22} />
+              </IconContainer>
+              <h2>{skill.name}</h2>
+              <TechType>{skill.type}</TechType>
+              <p>{skill.description}</p>
+            </SkillItem>
+          ))}
+        </SkillsWrapper>
       </SkillsContent>
     </SkillsSectionContainer>
   )
