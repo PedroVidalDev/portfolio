@@ -89,7 +89,7 @@ export const ContactSection = () => {
   return (
     <ContactSectionContainer id='contact'>
       <Button
-        label='Submit message'
+        label={t('contact.contactButton')}
         type='primary'
         hide={!isMobile}
         onClick={handleSubmit}
