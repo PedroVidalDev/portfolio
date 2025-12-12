@@ -6,10 +6,15 @@ import BrazilFlag from 'assets/languages/brazil.png'
 import USFlag from 'assets/languages/eua.png'
 
 export const HeaderSectionContainer = styled.header`
+  position: fixed;
   display: flex;
 
-  width: 100%;
+  top: 0;
+  left: 0;
 
+  z-index: 1000;
+
+  width: 100%;
   height: 80px;
 
   padding: 0 10%;
@@ -17,7 +22,8 @@ export const HeaderSectionContainer = styled.header`
   align-items: center;
   justify-content: space-between;
 
-  background-color: ${({ theme }) => theme.COLORS.DARK_PRIMARY};
+  background-color: transparent;
+  backdrop-filter: blur(10px);
 `
 
 export const TitleHeader = styled(Title)`
