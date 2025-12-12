@@ -16,9 +16,13 @@ import {
   ProjectImage,
   ProjectInfo,
 } from './styles'
+import { useLanguageContext } from 'contexts/LanguageContext'
 
 export const ProjectsSection = () => {
   const { t } = useTranslation()
+
+  const { currentLang } = useLanguageContext()
+  const lang = currentLang as 'en' | 'pt'
 
   return (
     <ProjectsContainer id='projects'>
@@ -42,7 +46,7 @@ export const ProjectsSection = () => {
                 ))}
               </TechBadgeWrapper>
               <h2>{item.name}</h2>
-              <p>{item.description}</p>
+              <p>{item.description[lang]}</p>
             </ProjectInfo>
           </ProjectItem>
         ))}

@@ -15,9 +15,13 @@ import {
   SkillsSubtitle,
   SkillsWrapper,
 } from './styles'
+import { useLanguageContext } from 'contexts/LanguageContext'
 
 export const SkillsSection = () => {
   const { t } = useTranslation()
+
+  const { currentLang } = useLanguageContext()
+  const lang = currentLang as 'en' | 'pt'
 
   const [isHoveringLanguages, setIsHoveringLanguages] = useState(false)
   const [isHoveringTools, setIsHoveringTools] = useState(false)
@@ -43,8 +47,8 @@ export const SkillsSection = () => {
                 <Icon name={skill.icon} color='GRAY_0' size={22} />
               </IconContainer>
               <h2>{skill.name}</h2>
-              <TechBadge>{skill.type}</TechBadge>
-              <p>{skill.description}</p>
+              <TechBadge>{skill.type[lang]}</TechBadge>
+              <p>{skill.description[lang]}</p>
             </SkillItem>
           ))}
         </SkillsWrapper>
@@ -55,8 +59,8 @@ export const SkillsSection = () => {
                 <Icon name={skill.icon} color='GRAY_0' size={22} />
               </IconContainer>
               <h2>{skill.name}</h2>
-              <TechBadge>{skill.type}</TechBadge>
-              <p>{skill.description}</p>
+              <TechBadge>{skill.type[lang]}</TechBadge>
+              <p>{skill.description[lang]}</p>
             </SkillItem>
           ))}
         </SkillsWrapper>
@@ -78,8 +82,8 @@ export const SkillsSection = () => {
                 <Icon name={skill.icon} color='GRAY_0' size={22} />
               </IconContainer>
               <h2>{skill.name}</h2>
-              <TechBadge>{skill.type}</TechBadge>
-              <p>{skill.description}</p>
+              <TechBadge>{skill.type[lang]}</TechBadge>
+              <p>{skill.description[lang]}</p>
             </SkillItem>
           ))}
         </SkillsWrapper>
@@ -90,8 +94,8 @@ export const SkillsSection = () => {
                 <Icon name={skill.icon} color='GRAY_0' size={22} />
               </IconContainer>
               <h2>{skill.name}</h2>
-              <TechBadge>{skill.type}</TechBadge>
-              <p>{skill.description}</p>
+              <TechBadge>{skill.type[lang]}</TechBadge>
+              <p>{skill.description[lang]}</p>
             </SkillItem>
           ))}
         </SkillsWrapper>

@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import {
@@ -8,17 +7,12 @@ import {
   Options,
   TitleHeader,
 } from './styles'
+import { useLanguageContext } from 'contexts/LanguageContext'
 
 export const HeaderSection = () => {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
 
-  const [currentLang, setCurrentLang] = useState(i18n.language)
-
-  const changeLanguage = (lang: string) => {
-    i18n.changeLanguage(lang)
-    setCurrentLang(lang)
-    localStorage.setItem('language', lang)
-  }
+  const { currentLang, changeLanguage } = useLanguageContext()
 
   return (
     <HeaderSectionContainer>

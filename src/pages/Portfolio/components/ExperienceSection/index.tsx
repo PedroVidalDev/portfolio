@@ -17,9 +17,14 @@ import {
   ExperienceDetails,
   ExperienceContainer,
 } from './styles'
+import { useLanguageContext } from 'contexts/LanguageContext'
 
 export const ExperienceSection = () => {
   const { t } = useTranslation()
+
+  const { currentLang } = useLanguageContext()
+  console.log('Current Language:', currentLang)
+  const lang = currentLang as 'en' | 'pt'
 
   const handleClickItem = (link: string) => {
     window.open(link, '_blank')
@@ -45,7 +50,7 @@ export const ExperienceSection = () => {
             <ExperienceDetails>
               <div>
                 <h3>
-                  {item.company} | {item.role}
+                  {item.company} | {item.role[lang]}
                 </h3>
                 <TechBadgeWrapper>
                   {item.skills.map((skill, skillIndex) => (
@@ -54,7 +59,7 @@ export const ExperienceSection = () => {
                 </TechBadgeWrapper>
               </div>
               <div>
-                <p>{item.period}</p>
+                <p>{item.period[lang]}</p>
               </div>
             </ExperienceDetails>
           </ExperienceItem>
