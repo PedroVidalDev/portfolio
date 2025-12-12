@@ -24,4 +24,27 @@ export const GlobalStyle = createGlobalStyle`
         height: 100%;
         background-color: #FFF;
     }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #9333ea;
+        border-radius: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #7e22ce;
+    }
+
+    /* Firefox */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #9333ea #f1f1f1;
+    }
 `
