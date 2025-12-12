@@ -1,3 +1,10 @@
+import { Icon } from 'components/Icon'
+import { Title } from 'components/Title/styles'
+
+import { SOCIALS } from './consts'
+
+import Profile from 'assets/profile.png'
+
 import {
   ButtonsContainer,
   HomeSectionContainer,
@@ -6,10 +13,6 @@ import {
   StarItem,
   TextsContainer,
 } from './styles'
-import { Icon } from 'components/Icon'
-import { Title } from 'components/Title/styles'
-import { SOCIALS } from './consts'
-import Profile from 'assets/profile.png'
 
 export const HomeSection = () => {
   return (

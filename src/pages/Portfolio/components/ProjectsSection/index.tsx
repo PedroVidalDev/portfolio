@@ -1,4 +1,11 @@
+import {
+  TechBadge,
+  TechBadgeWrapper,
+} from 'components/TechBadgeComponents/styles'
 import { Title } from 'components/Title/styles'
+
+import { PROJECTS_ITEMS } from './consts'
+
 import {
   ProjectsHeader,
   ProjectsContent,
@@ -7,11 +14,6 @@ import {
   ProjectImage,
   ProjectInfo,
 } from './styles'
-import { PROJECTS_ITEMS } from './consts'
-import {
-  TechBadge,
-  TechBadgeWrapper,
-} from 'components/TechBadgeComponents/styles'
 
 export const ProjectsSection = () => {
   return (

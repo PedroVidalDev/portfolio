@@ -1,5 +1,8 @@
+import { useState } from 'react'
+
 import { Icon } from 'components/Icon'
 import { Title } from 'components/Title/styles'
+import { TechBadge } from 'components/TechBadgeComponents/styles'
 
 import { SKILLS_LANGUAGES, SKILLS_TOOLS } from './consts'
 
@@ -11,8 +14,6 @@ import {
   SkillsSubtitle,
   SkillsWrapper,
 } from './styles'
-import { useState } from 'react'
-import { TechBadge } from 'components/TechBadgeComponents/styles'
 
 export const SkillsSection = () => {
   const [isHoveringLanguages, setIsHoveringLanguages] = useState(false)

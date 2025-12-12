@@ -1,9 +1,9 @@
-import { ContactSection } from './components/ContactSection'
-import { ExperienceSection } from './components/ExperienceSection'
-import { FooterSection } from './components/FooterSection'
 import { HomeSection } from './components/HomeSection'
-import { ProjectsSection } from './components/ProjectsSection'
+import { FooterSection } from './components/FooterSection'
 import { SkillsSection } from './components/SkillsSection'
+import { ContactSection } from './components/ContactSection'
+import { ProjectsSection } from './components/ProjectsSection'
+import { ExperienceSection } from './components/ExperienceSection'
 
 import { PortfolioContainer } from './styles'
 
