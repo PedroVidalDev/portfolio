@@ -28,6 +28,7 @@ export const ExperienceContent = styled.div`
 export const ExperienceItem = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   border-radius: 8px;
 
@@ -47,7 +48,7 @@ export const ExperienceItem = styled.div`
 `
 
 export const ExperienceIcon = styled.div`
-  width: 64px;
+  min-width: 64px;
   height: 64px;
 
   border-radius: 8px;
@@ -70,7 +71,7 @@ export const ExperienceDetails = styled.div`
 
   gap: 4px;
 
-  span {
+  p {
     font-family: ${({ theme }) => theme.FONTS.PRIMARY};
     font-size: ${({ theme }) => theme.FONT_SIZE.SMALL};
     font-weight: ${({ theme }) => theme.FONT_WEIGHT.REGULAR};
@@ -82,5 +83,14 @@ export const ExperienceDetails = styled.div`
     font-size: ${({ theme }) => theme.FONT_SIZE.MEDIUM};
     font-weight: ${({ theme }) => theme.FONT_WEIGHT.BOLD};
     color: ${({ theme }) => theme.COLORS.GRAY_0};
+  }
+
+  @media (max-width: 780px) {
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    flex-direction: column;
+
+    gap: 0px;
   }
 `

@@ -9,6 +9,7 @@ import {
 } from './styles'
 import { EXPERIENCE_ITEMS } from './consts'
 import { Icon } from 'components/Icon'
+import { TechBadge, TechBadgeWrapper } from '../ProjectsSection/styles'
 
 export const ExperienceSection = () => {
   const handleClickItem = (link: string) => {
@@ -36,10 +37,14 @@ export const ExperienceSection = () => {
                 <h3>
                   {item.company} | {item.role}
                 </h3>
-                <span> {item.skills.join(', ')} </span>
+                <TechBadgeWrapper>
+                  {item.skills.map((skill, skillIndex) => (
+                    <TechBadge key={skillIndex}>{skill}</TechBadge>
+                  ))}
+                </TechBadgeWrapper>
               </div>
               <div>
-                <span>{item.period}</span>
+                <p>{item.period}</p>
               </div>
             </ExperienceDetails>
           </ExperienceItem>
