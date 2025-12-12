@@ -87,7 +87,7 @@ export const ContactSection = () => {
   }, [])
 
   return (
-    <ContactSectionContainer>
+    <ContactSectionContainer id='contact'>
       <Button
         label='Submit message'
         type='primary'
@@ -137,7 +137,7 @@ export const ContactSection = () => {
       <ContactTextSection>
         <Title>
           <span>{t('contact.contactTitle.part1')}</span>
-          {t('contact.contactTitle.part2')} <br />
+          {t('contact.contactTitle.part2')}
           {t('contact.contactTitle.part3')}
         </Title>
         <p>{t('contact.contactText')}</p>

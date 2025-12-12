@@ -23,12 +23,14 @@ export const SkillsSection = () => {
   const [isHoveringTools, setIsHoveringTools] = useState(false)
 
   return (
-    <SkillsSectionContainer>
+    <SkillsSectionContainer id='skills'>
       <Title style={{ textAlign: 'center' }}>
         <span>{t('skill.skillTitle.part1')}</span> {t('skill.skillTitle.part2')}
       </Title>
       <SkillsSubtitle side='left'>
-        Languages <span>&</span> Frameworks
+        {t('skill.skillLanguageTitle.part1')}{' '}
+        <span>{t('skill.skillLanguageTitle.part2')}</span>{' '}
+        {t('skill.skillLanguageTitle.part3')}
       </SkillsSubtitle>
       <SkillsContent
         onMouseEnter={() => setIsHoveringLanguages(true)}
@@ -61,7 +63,9 @@ export const SkillsSection = () => {
       </SkillsContent>
 
       <SkillsSubtitle side='right'>
-        Tools <span>&</span> Platforms
+        {t('skill.skillTollsTitle.part1')}{' '}
+        <span>{t('skill.skillTollsTitle.part2')}</span>{' '}
+        {t('skill.skillTollsTitle.part3')}
       </SkillsSubtitle>
       <SkillsContent
         onMouseEnter={() => setIsHoveringTools(true)}

@@ -1,4 +1,15 @@
 {
+    "header": {
+        "headerTitle": {
+            "part1": "Pedro",
+            "part2": " Vidal"
+        },
+        "option1": "Home",
+        "option2": "Experience",
+        "option3": "Skills",
+        "option4": "Projects",
+        "option5": "Contact"
+    },
     "home": {
         "currentJob": "Fullstack Software Developer",
         "welcomeTitle": {
@@ -18,6 +29,16 @@
         "skillTitle": {
             "part1": "My",
             "part2": " Skills"
+        },
+        "skillLanguageTitle": {
+            "part1": "Languages",
+            "part2": "&",
+            "part3": "Frameworks"
+        },
+        "skillTollsTitle": {
+            "part1": "Tools",
+            "part2": "&",
+            "part3": "Platforms"
         }
     },
     "project": {

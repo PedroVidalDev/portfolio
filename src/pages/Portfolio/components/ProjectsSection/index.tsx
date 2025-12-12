@@ -21,7 +21,7 @@ export const ProjectsSection = () => {
   const { t } = useTranslation()
 
   return (
-    <ProjectsContainer>
+    <ProjectsContainer id='projects'>
       <ProjectsHeader>
         <Title style={{ textAlign: 'center' }}>
           <span> {t('project.projectTitle.part1')} </span>

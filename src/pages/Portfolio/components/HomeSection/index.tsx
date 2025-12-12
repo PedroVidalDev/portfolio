@@ -20,7 +20,7 @@ export const HomeSection = () => {
   const { t } = useTranslation()
 
   return (
-    <HomeSectionContainer>
+    <HomeSectionContainer id='home'>
       <TextsContainer>
         <span>{t('home.currentJob')}</span>
         <Title>

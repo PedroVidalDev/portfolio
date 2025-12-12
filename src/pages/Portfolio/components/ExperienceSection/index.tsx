@@ -26,7 +26,7 @@ export const ExperienceSection = () => {
   }
 
   return (
-    <ExperienceContainer>
+    <ExperienceContainer id='experience'>
       <ExperienceHeader>
         <Title style={{ textAlign: 'center' }}>
           <span> {t('experience.experienceTitle.part1')} </span>
