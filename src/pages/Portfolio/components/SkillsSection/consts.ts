@@ -1,9 +1,14 @@
 import * as DiIcons from 'react-icons/di'
 import * as IoIcons from 'react-icons/fa6'
+
+import ExpressIcon from 'assets/techs/expressjs.svg'
+import NestIcon from 'assets/techs/nest.svg'
+
 import type { LocalizedString } from 'types/LocalizedString'
 
 type SkillType = {
-  icon: keyof typeof DiIcons | keyof typeof IoIcons
+  icon: keyof typeof DiIcons | keyof typeof IoIcons | string
+  iconType: 'LibIcon' | 'CustomIcon'
   name: string
   type: LocalizedString
   description: LocalizedString
@@ -12,6 +17,7 @@ type SkillType = {
 export const SKILLS_LANGUAGES: SkillType[] = [
   {
     icon: 'DiNodejsSmall',
+    iconType: 'LibIcon',
     name: 'TypeScript',
     type: {
       en: 'Language',
@@ -24,6 +30,7 @@ export const SKILLS_LANGUAGES: SkillType[] = [
   },
   {
     icon: 'DiReact',
+    iconType: 'LibIcon',
     name: 'React',
     type: {
       en: 'Library',
@@ -35,7 +42,34 @@ export const SKILLS_LANGUAGES: SkillType[] = [
     },
   },
   {
+    icon: ExpressIcon,
+    iconType: 'CustomIcon',
+    name: 'Express.js',
+    type: {
+      en: 'Library',
+      pt: 'Biblioteca',
+    },
+    description: {
+      en: 'Experienced in building backend services and APIs using Express.js.',
+      pt: 'Experiente em construir serviços backend e APIs usando Express.js.',
+    },
+  },
+  {
+    icon: NestIcon,
+    iconType: 'CustomIcon',
+    name: 'NestJS',
+    type: {
+      en: 'Framework',
+      pt: 'Framework',
+    },
+    description: {
+      en: 'Experienced in building scalable and maintainable server-side applications using NestJS.',
+      pt: 'Experiente em construir aplicações server-side escaláveis e manuteníveis usando NestJS.',
+    },
+  },
+  {
     icon: 'DiJava',
+    iconType: 'LibIcon',
     name: 'Java',
     type: {
       en: 'Language',
@@ -48,6 +82,7 @@ export const SKILLS_LANGUAGES: SkillType[] = [
   },
   {
     icon: 'FaLeaf',
+    iconType: 'LibIcon',
     name: 'Spring Boot',
     type: {
       en: 'Framework',
@@ -60,6 +95,7 @@ export const SKILLS_LANGUAGES: SkillType[] = [
   },
   {
     icon: 'DiPhp',
+    iconType: 'LibIcon',
     name: 'PHP',
     type: {
       en: 'Language',
@@ -72,6 +108,7 @@ export const SKILLS_LANGUAGES: SkillType[] = [
   },
   {
     icon: 'DiLaravel',
+    iconType: 'LibIcon',
     name: 'Laravel',
     type: {
       en: 'Framework',
@@ -84,6 +121,7 @@ export const SKILLS_LANGUAGES: SkillType[] = [
   },
   {
     icon: 'DiPython',
+    iconType: 'LibIcon',
     name: 'Python',
     type: {
       en: 'Language',
@@ -99,6 +137,7 @@ export const SKILLS_LANGUAGES: SkillType[] = [
 export const SKILLS_TOOLS: SkillType[] = [
   {
     icon: 'DiGit',
+    iconType: 'LibIcon',
     name: 'Git',
     type: {
       en: 'Version Control',
@@ -111,6 +150,7 @@ export const SKILLS_TOOLS: SkillType[] = [
   },
   {
     icon: 'DiGithubAlt',
+    iconType: 'LibIcon',
     name: 'CI/CD',
     type: {
       en: 'DevOps',
@@ -123,6 +163,7 @@ export const SKILLS_TOOLS: SkillType[] = [
   },
   {
     icon: 'DiMysql',
+    iconType: 'LibIcon',
     name: 'MySQL',
     type: {
       en: 'Database',
@@ -135,6 +176,7 @@ export const SKILLS_TOOLS: SkillType[] = [
   },
   {
     icon: 'DiPostgresql',
+    iconType: 'LibIcon',
     name: 'PostgreSQL',
     type: {
       en: 'Database',
@@ -147,6 +189,7 @@ export const SKILLS_TOOLS: SkillType[] = [
   },
   {
     icon: 'DiMongodb',
+    iconType: 'LibIcon',
     name: 'MongoDB',
     type: {
       en: 'Database',
@@ -159,6 +202,7 @@ export const SKILLS_TOOLS: SkillType[] = [
   },
   {
     icon: 'DiDocker',
+    iconType: 'LibIcon',
     name: 'Docker',
     type: {
       en: 'Tool',

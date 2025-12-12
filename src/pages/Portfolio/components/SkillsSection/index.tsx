@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
@@ -44,7 +45,16 @@ export const SkillsSection = () => {
           {SKILLS_LANGUAGES.map((skill, index) => (
             <SkillItem key={index}>
               <IconContainer>
-                <Icon name={skill.icon} color='GRAY_0' size={22} />
+                {skill.iconType === 'CustomIcon' ? (
+                  <img
+                    src={skill.icon}
+                    alt={skill.name}
+                    width={22}
+                    height={22}
+                  />
+                ) : (
+                  <Icon name={skill.icon as any} color='GRAY_0' size={22} />
+                )}
               </IconContainer>
               <h2>{skill.name}</h2>
               <TechBadge>{skill.type[lang]}</TechBadge>
@@ -56,7 +66,16 @@ export const SkillsSection = () => {
           {SKILLS_LANGUAGES.map((skill, index) => (
             <SkillItem key={index}>
               <IconContainer>
-                <Icon name={skill.icon} color='GRAY_0' size={22} />
+                {skill.iconType === 'CustomIcon' ? (
+                  <img
+                    src={skill.icon}
+                    alt={skill.name}
+                    width={22}
+                    height={22}
+                  />
+                ) : (
+                  <Icon name={skill.icon as any} color='GRAY_0' size={22} />
+                )}
               </IconContainer>
               <h2>{skill.name}</h2>
               <TechBadge>{skill.type[lang]}</TechBadge>
@@ -79,7 +98,16 @@ export const SkillsSection = () => {
           {SKILLS_TOOLS.map((skill, index) => (
             <SkillItem key={index}>
               <IconContainer>
-                <Icon name={skill.icon} color='GRAY_0' size={22} />
+                {skill.iconType === 'CustomIcon' ? (
+                  <img
+                    src={skill.icon}
+                    alt={skill.name}
+                    width={22}
+                    height={22}
+                  />
+                ) : (
+                  <Icon name={skill.icon as any} color='GRAY_0' size={22} />
+                )}
               </IconContainer>
               <h2>{skill.name}</h2>
               <TechBadge>{skill.type[lang]}</TechBadge>
@@ -91,7 +119,16 @@ export const SkillsSection = () => {
           {SKILLS_TOOLS.map((skill, index) => (
             <SkillItem key={index}>
               <IconContainer>
-                <Icon name={skill.icon} color='GRAY_0' size={22} />
+                {skill.iconType === 'CustomIcon' ? (
+                  <img
+                    src={skill.icon}
+                    alt={skill.name}
+                    width={22}
+                    height={22}
+                  />
+                ) : (
+                  <Icon name={skill.icon as any} color='GRAY_0' size={22} />
+                )}
               </IconContainer>
               <h2>{skill.name}</h2>
               <TechBadge>{skill.type[lang]}</TechBadge>

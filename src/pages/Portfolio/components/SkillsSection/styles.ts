@@ -108,6 +108,12 @@ export const SkillItem = styled.div`
   }
 
   p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
     ${({ theme }) => css`
       font-family: ${theme.FONTS.PRIMARY};
       font-size: ${theme.FONT_SIZE.SMALL};
