@@ -106,6 +106,8 @@ export const ProjectInfo = styled.div`
       color: ${theme.COLORS.GRAY_400};
       font-weight: ${theme.FONT_WEIGHT.REGULAR};
 
+      text-align: justify;
+
       @media (max-width: 1333px) {
         font-size: ${theme.FONT_SIZE.XSMALL};
       }

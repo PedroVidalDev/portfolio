@@ -21,7 +21,7 @@ export const PROJECTS_ITEMS: ProjectsItemType[] = [
       'Docker',
     ],
     description:
-      'A comprehensive security system designed to prevent unauthorized access, control people flow, and enhance security in public spaces, particularly educational institutions. Features a web platform connected to ESP32 microcontroller for real-time access control and monitoring.',
+      'A comprehensive security system designed to prevent unauthorized access, control people flow, and enhance security in public spaces, particularly educational institutions.',
     image: SphynxImage,
     link: 'https://github.com/orgs/Cliyo/repositories',
   },
