@@ -40,10 +40,20 @@ export const SkillsContent = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
+
+  &:hover {
+    overflow-x: auto;
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
 `
 
 interface SkillsWrapperProps {
   reverse?: boolean
+  isPaused?: boolean
 }
 
 export const SkillsWrapper = styled.div<SkillsWrapperProps>`
@@ -62,6 +72,8 @@ export const SkillsWrapper = styled.div<SkillsWrapperProps>`
 
   animation: ${CarouselAnimation} 20s linear infinite
     ${({ reverse }) => (reverse ? 'reverse' : 'normal')};
+
+  animation-play-state: ${({ isPaused }) => (isPaused ? 'paused' : 'running')};
 `
 
 export const SkillItem = styled.div`

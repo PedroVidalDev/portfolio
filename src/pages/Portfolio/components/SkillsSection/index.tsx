@@ -12,8 +12,12 @@ import {
   SkillsWrapper,
   TechType,
 } from './styles'
+import { useState } from 'react'
 
 export const SkillsSection = () => {
+  const [isHoveringLanguages, setIsHoveringLanguages] = useState(false)
+  const [isHoveringTools, setIsHoveringTools] = useState(false)
+
   return (
     <SkillsSectionContainer>
       <Title style={{ textAlign: 'center' }}>
@@ -22,8 +26,11 @@ export const SkillsSection = () => {
       <SkillsSubtitle side='left'>
         Languages <span>&</span> Frameworks
       </SkillsSubtitle>
-      <SkillsContent>
-        <SkillsWrapper>
+      <SkillsContent
+        onMouseEnter={() => setIsHoveringLanguages(true)}
+        onMouseLeave={() => setIsHoveringLanguages(false)}
+      >
+        <SkillsWrapper isPaused={isHoveringLanguages}>
           {SKILLS_LANGUAGES.map((skill, index) => (
             <SkillItem key={index}>
               <IconContainer>
@@ -35,7 +42,7 @@ export const SkillsSection = () => {
             </SkillItem>
           ))}
         </SkillsWrapper>
-        <SkillsWrapper aria-hidden>
+        <SkillsWrapper aria-hidden isPaused={isHoveringLanguages}>
           {SKILLS_LANGUAGES.map((skill, index) => (
             <SkillItem key={index}>
               <IconContainer>
@@ -52,8 +59,11 @@ export const SkillsSection = () => {
       <SkillsSubtitle side='right'>
         Tools <span>&</span> Platforms
       </SkillsSubtitle>
-      <SkillsContent>
-        <SkillsWrapper reverse={true}>
+      <SkillsContent
+        onMouseEnter={() => setIsHoveringTools(true)}
+        onMouseLeave={() => setIsHoveringTools(false)}
+      >
+        <SkillsWrapper reverse={true} isPaused={isHoveringTools}>
           {SKILLS_TOOLS.map((skill, index) => (
             <SkillItem key={index}>
               <IconContainer>
@@ -65,7 +75,7 @@ export const SkillsSection = () => {
             </SkillItem>
           ))}
         </SkillsWrapper>
-        <SkillsWrapper reverse={true} aria-hidden>
+        <SkillsWrapper reverse={true} aria-hidden isPaused={isHoveringTools}>
           {SKILLS_TOOLS.map((skill, index) => (
             <SkillItem key={index}>
               <IconContainer>
