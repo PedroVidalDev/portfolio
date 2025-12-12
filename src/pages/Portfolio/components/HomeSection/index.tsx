@@ -31,7 +31,7 @@ export const HomeSection = () => {
 
         <ButtonsContainer>
           {SOCIALS.map((social) => (
-            <Social>
+            <Social onClick={() => window.open(social.url, '_blank')}>
               <Icon name={social.iconName} color='PRIMARY' size={32} />
             </Social>
           ))}
