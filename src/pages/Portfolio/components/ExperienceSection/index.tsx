@@ -23,7 +23,6 @@ export const ExperienceSection = () => {
   const { t } = useTranslation()
 
   const { currentLang } = useLanguageContext()
-  console.log('Current Language:', currentLang)
   const lang = currentLang as 'en' | 'pt'
 
   const handleClickItem = (link: string) => {
