@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next'
+
 import {
   TechBadge,
   TechBadgeWrapper,
@@ -16,11 +18,14 @@ import {
 } from './styles'
 
 export const ProjectsSection = () => {
+  const { t } = useTranslation()
+
   return (
     <ProjectsContainer>
       <ProjectsHeader>
         <Title style={{ textAlign: 'center' }}>
-          <span> My </span> Projects
+          <span> {t('project.projectTitle.part1')} </span>
+          {t('project.projectTitle.part2')}
         </Title>
       </ProjectsHeader>
       <ProjectsContent>

@@ -1,0 +1,48 @@
+{
+    "home": {
+        "currentJob": "Fullstack Software Developer",
+        "welcomeTitle": {
+            "part1": " Hey! ",
+            "part2": " I'm ",
+            "part3": " Pedro Vidal"
+        },
+        "welcomeText": "I am a passionate software developer with experience in building fullstack applications with a large number of stacks, always eager to learn new technologies and improve my skills."
+    },
+    "experience": {
+        "experienceTitle": {
+            "part1": "My",
+            "part2": " Experience"
+        }
+    },
+    "skill": {
+        "skillTitle": {
+            "part1": "My",
+            "part2": " Skills"
+        }
+    },
+    "project": {
+        "projectTitle": {
+            "part1": "My",
+            "part2": " Projects"
+        }
+    },
+    "contact": {
+        "contactTitle": {
+            "part1": "Don't",
+            "part2": " be shy! ",
+            "part3": " Contact me"
+        },
+        "inputs": {
+            "name": "Your Name *",
+            "subject": "Your Subject *",
+            "email": "Your Email *",
+            "phone": "Your Phone",
+            "message": "Your Message *"
+        },
+        "contactText": "Feel free to reach out for collaborations or just a friendly hello! I'm always open to discussing new projects and opportunities.",
+        "contactButton": "Submit message"
+    },
+    "footer": {
+        "footerText": "All rights reserved."
+    }
+}

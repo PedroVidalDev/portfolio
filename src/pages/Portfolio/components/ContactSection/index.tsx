@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import emailjs from '@emailjs/browser'
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 import { Button } from 'components/Button'
 import { Title } from 'components/Title/styles'
@@ -15,6 +16,8 @@ import {
 import { toastEmmiter } from 'utils/toast'
 
 export const ContactSection = () => {
+  const { t } = useTranslation()
+
   const [isMobile, setIsMobile] = useState(false)
   const [formData, setFormData] = useState({
     name: '',
@@ -96,14 +99,14 @@ export const ContactSection = () => {
           <ContactInput
             type='text'
             name='name'
-            placeholder='Your Name *'
+            placeholder={t('contact.inputs.name')}
             value={formData.name}
             onChange={handleInputChange}
           />
           <ContactInput
             type='text'
             name='subject'
-            placeholder='Your Subject *'
+            placeholder={t('contact.inputs.subject')}
             value={formData.subject}
             onChange={handleInputChange}
           />
@@ -112,35 +115,34 @@ export const ContactSection = () => {
           <ContactInput
             type='email'
             name='email'
-            placeholder='Your Email *'
+            placeholder={t('contact.inputs.email')}
             value={formData.email}
             onChange={handleInputChange}
           />
           <ContactInput
             type='text'
             name='phone'
-            placeholder='Your Phone'
+            placeholder={t('contact.inputs.phone')}
             value={formData.phone}
             onChange={handleInputChange}
           />
         </div>
         <ContactTextarea
           name='message'
-          placeholder='Your Message *'
+          placeholder={t('contact.inputs.message')}
           value={formData.message}
           onChange={handleInputChange}
         />
       </ContactForm>
       <ContactTextSection>
         <Title>
-          <span>Don't</span> be shy! <br /> Contact Me
+          <span>{t('contact.contactTitle.part1')}</span>
+          {t('contact.contactTitle.part2')} <br />
+          {t('contact.contactTitle.part3')}
         </Title>
-        <p>
-          Feel free to reach out for collaborations or just a friendly hello!
-          I'm always open to discussing new projects and opportunities.
-        </p>
+        <p>{t('contact.contactText')}</p>
         <Button
-          label='Submit message'
+          label={t('contact.contactButton')}
           type='primary'
           hide={isMobile}
           onClick={handleSubmit}

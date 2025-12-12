@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next'
+
 import { Icon } from 'components/Icon'
 import { Title } from 'components/Title/styles'
 
@@ -15,18 +17,17 @@ import {
 } from './styles'
 
 export const HomeSection = () => {
+  const { t } = useTranslation()
+
   return (
     <HomeSectionContainer>
       <TextsContainer>
-        <span>Fullstack Software Developer</span>
+        <span>{t('home.currentJob')}</span>
         <Title>
-          <span> Hey! </span> I'm <br /> Pedro Vidal
+          <span> {t('home.welcomeTitle.part1')} </span>
+          {t('home.welcomeTitle.part2')} <br /> {t('home.welcomeTitle.part3')}
         </Title>
-        <p>
-          I am a passionate software developer with experience in building
-          fullstack applications with a large number of stacks, always eager to
-          learn new technologies and improve my skills.
-        </p>
+        <p>{t('home.welcomeText')}</p>
 
         <ButtonsContainer>
           {SOCIALS.map((social) => (

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 import { Icon } from 'components/Icon'
 import { Title } from 'components/Title/styles'
@@ -16,13 +17,15 @@ import {
 } from './styles'
 
 export const SkillsSection = () => {
+  const { t } = useTranslation()
+
   const [isHoveringLanguages, setIsHoveringLanguages] = useState(false)
   const [isHoveringTools, setIsHoveringTools] = useState(false)
 
   return (
     <SkillsSectionContainer>
       <Title style={{ textAlign: 'center' }}>
-        <span>My</span> Skills
+        <span>{t('skill.skillTitle.part1')}</span> {t('skill.skillTitle.part2')}
       </Title>
       <SkillsSubtitle side='left'>
         Languages <span>&</span> Frameworks

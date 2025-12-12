@@ -1,0 +1,48 @@
+{
+    "home": {
+        "currentJob": "Desenvolvedor de Software Fullstack",
+        "welcomeTitle": {
+            "part1": " Olá! ",
+            "part2": " Eu sou ",
+            "part3": " Pedro Vidal"
+        },
+        "welcomeText": "Sou um desenvolvedor de software apaixonado com experiência na construção de aplicações fullstack com diversas stacks, sempre disposto a aprender novas tecnologias e aprimorar minhas habilidades."
+    },
+    "experience": {
+        "experienceTitle": {
+            "part1": "Minha",
+            "part2": " Experiência"
+        }
+    },
+    "skill": {
+        "skillTitle": {
+            "part1": "Minhas",
+            "part2": " Habilidades"
+        }
+    },
+    "project": {
+        "projectTitle": {
+            "part1": "Meus",
+            "part2": " Projetos"
+        }
+    },
+    "contact": {
+        "contactTitle": {
+            "part1": "Não",
+            "part2": " seja tímido! ",
+            "part3": " Entre em contato"
+        },
+        "inputs": {
+            "name": "Seu Nome *",
+            "subject": "Assunto *",
+            "email": "Seu E-mail *",
+            "phone": "Seu Telefone",
+            "message": "Sua Mensagem *"
+        },
+        "contactText": "Sinta-se à vontade para entrar em contato para colaborações ou apenas para dar um oi! Estou sempre aberto para discutir novos projetos e oportunidades.",
+        "contactButton": "Enviar mensagem"
+    },
+    "footer": {
+        "footerText": "Todos os direitos reservados."
+    }
+}

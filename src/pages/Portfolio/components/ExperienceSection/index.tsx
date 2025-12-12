@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next'
+
 import { EXPERIENCE_ITEMS } from './consts'
 
 import {
@@ -17,6 +19,8 @@ import {
 } from './styles'
 
 export const ExperienceSection = () => {
+  const { t } = useTranslation()
+
   const handleClickItem = (link: string) => {
     window.open(link, '_blank')
   }
@@ -25,7 +29,8 @@ export const ExperienceSection = () => {
     <ExperienceContainer>
       <ExperienceHeader>
         <Title style={{ textAlign: 'center' }}>
-          <span> My </span> Experience
+          <span> {t('experience.experienceTitle.part1')} </span>
+          {t('experience.experienceTitle.part2')}
         </Title>
       </ExperienceHeader>
       <ExperienceContent>
