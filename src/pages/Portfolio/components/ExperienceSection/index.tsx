@@ -9,7 +9,10 @@ import {
 } from './styles'
 import { EXPERIENCE_ITEMS } from './consts'
 import { Icon } from 'components/Icon'
-import { TechBadge, TechBadgeWrapper } from '../ProjectsSection/styles'
+import {
+  TechBadge,
+  TechBadgeWrapper,
+} from 'components/TechBadgeComponents/styles'
 
 export const ExperienceSection = () => {
   const handleClickItem = (link: string) => {

@@ -6,10 +6,12 @@ import {
   ProjectItem,
   ProjectImage,
   ProjectInfo,
-  TechBadge,
-  TechBadgeWrapper,
 } from './styles'
 import { PROJECTS_ITEMS } from './consts'
+import {
+  TechBadge,
+  TechBadgeWrapper,
+} from 'components/TechBadgeComponents/styles'
 
 export const ProjectsSection = () => {
   return (

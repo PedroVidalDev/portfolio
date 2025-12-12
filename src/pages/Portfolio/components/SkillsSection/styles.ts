@@ -143,25 +143,6 @@ export const IconContainer = styled.div`
   border-radius: 8px;
 `
 
-export const TechType = styled.span`
-  ${({ theme }) => css`
-    border: 1px solid ${theme.COLORS.PRIMARY};
-    border-radius: 4px;
-    padding: 2px 6px;
-
-    font-family: ${theme.FONTS.PRIMARY};
-    font-size: ${theme.FONT_SIZE.SMALL};
-    color: ${theme.COLORS.PRIMARY};
-    font-weight: ${theme.FONT_WEIGHT.REGULAR};
-
-    background-color: ${theme.COLORS.DARK_PRIMARY};
-
-    @media (max-width: 1333px) {
-      font-size: ${theme.FONT_SIZE.XSMALL};
-    }
-  `};
-`
-
 interface SkillsSubtitleProps {
   side: 'left' | 'right'
 }

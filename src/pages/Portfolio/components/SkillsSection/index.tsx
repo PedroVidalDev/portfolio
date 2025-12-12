@@ -10,9 +10,9 @@ import {
   SkillsSectionContainer,
   SkillsSubtitle,
   SkillsWrapper,
-  TechType,
 } from './styles'
 import { useState } from 'react'
+import { TechBadge } from 'components/TechBadgeComponents/styles'
 
 export const SkillsSection = () => {
   const [isHoveringLanguages, setIsHoveringLanguages] = useState(false)
@@ -37,7 +37,7 @@ export const SkillsSection = () => {
                 <Icon name={skill.icon} color='GRAY_0' size={22} />
               </IconContainer>
               <h2>{skill.name}</h2>
-              <TechType>{skill.type}</TechType>
+              <TechBadge>{skill.type}</TechBadge>
               <p>{skill.description}</p>
             </SkillItem>
           ))}
@@ -49,7 +49,7 @@ export const SkillsSection = () => {
                 <Icon name={skill.icon} color='GRAY_0' size={22} />
               </IconContainer>
               <h2>{skill.name}</h2>
-              <TechType>{skill.type}</TechType>
+              <TechBadge>{skill.type}</TechBadge>
               <p>{skill.description}</p>
             </SkillItem>
           ))}
@@ -70,7 +70,7 @@ export const SkillsSection = () => {
                 <Icon name={skill.icon} color='GRAY_0' size={22} />
               </IconContainer>
               <h2>{skill.name}</h2>
-              <TechType>{skill.type}</TechType>
+              <TechBadge>{skill.type}</TechBadge>
               <p>{skill.description}</p>
             </SkillItem>
           ))}
@@ -82,7 +82,7 @@ export const SkillsSection = () => {
                 <Icon name={skill.icon} color='GRAY_0' size={22} />
               </IconContainer>
               <h2>{skill.name}</h2>
-              <TechType>{skill.type}</TechType>
+              <TechBadge>{skill.type}</TechBadge>
               <p>{skill.description}</p>
             </SkillItem>
           ))}
