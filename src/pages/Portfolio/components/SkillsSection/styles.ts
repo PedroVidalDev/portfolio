@@ -149,3 +149,39 @@ export const TechType = styled.span`
     }
   `};
 `
+
+interface SkillsSubtitleProps {
+  side: 'left' | 'right'
+}
+
+export const SkillsSubtitle = styled.h3<SkillsSubtitleProps>`
+  padding: 0 10%;
+
+  width: 100%;
+
+  text-align: ${({ side }) => (side === 'left' ? 'left' : 'right')};
+
+  ${({ theme }) => css`
+    font-family: ${theme.FONTS.PRIMARY};
+    font-size: ${theme.FONT_SIZE.XXXLARGE};
+    color: ${theme.COLORS.GRAY_0};
+    font-weight: ${theme.FONT_WEIGHT.REGULAR};
+
+    span {
+      font-family: ${theme.FONTS.SECONDARY}!important;
+      font-size: ${theme.FONT_SIZE.XXXLARGE}!important;
+      color: ${theme.COLORS.PRIMARY}!important;
+      font-weight: ${theme.FONT_WEIGHT.MEDIUM}!important;
+    }
+
+    @media (max-width: 1333px) {
+      ${({ theme }) => css`
+        font-size: ${theme.FONT_SIZE.XLARGE};
+
+        span {
+          font-size: ${theme.FONT_SIZE.XLARGE}!important;
+        }
+      `};
+    }
+  `};
+`
