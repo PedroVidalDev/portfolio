@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css, keyframes } from 'styled-components'
 
 import { Title } from 'components/Title/styles'
 
@@ -32,13 +32,73 @@ export const TitleHeader = styled(Title)`
   span {
     font-size: ${({ theme }) => theme.FONT_SIZE.XXLARGE}!important;
   }
+
+  @media (max-width: 1333px) {
+    font-size: ${({ theme }) => theme.FONT_SIZE.XLARGE}!important;
+
+    span {
+      font-size: ${({ theme }) => theme.FONT_SIZE.XLARGE}!important;
+    }
+  }
 `
 
-export const Options = styled.nav`
+const slideIn = keyframes`
+  from {
+    transform: translateY(calc(-100% - 80px));
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`
+
+const slideOut = keyframes`
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(calc(-100% - 80px));
+    opacity: 0;
+  }
+`
+
+interface OptionsProps {
+  expanded: boolean
+}
+
+export const Options = styled.nav<OptionsProps>`
   display: flex;
+
   align-items: center;
 
   gap: 32px;
+
+  @media (max-width: 1000px) {
+    position: fixed;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    top: 80px;
+    left: 0;
+
+    width: 100%;
+    padding: 32px 0;
+
+    background-color: rgba(18, 18, 18, 0.9);
+    backdrop-filter: blur(10px);
+
+    z-index: 1000;
+
+    animation: ${(props) => (props.expanded ? slideIn : slideOut)} 0.3s
+      ease-in-out forwards;
+    animation-fill-mode: forwards;
+  }
 `
 
 export const Option = styled.a`
@@ -52,6 +112,10 @@ export const Option = styled.a`
 
     @media (max-width: 1333px) {
       font-size: ${theme.FONT_SIZE.XSMALL};
+    }
+
+    @media (max-width: 1000px) {
+      font-size: ${theme.FONT_SIZE.SMALL};
     }
   `};
 
@@ -76,4 +140,13 @@ export const LanguageSelector = styled.button<{ language: string }>`
   background-repeat: no-repeat;
 
   border: 0;
+`
+
+export const MobileMenuIcon = styled.div`
+  display: none;
+
+  @media (max-width: 1000px) {
+    display: block;
+    cursor: pointer;
+  }
 `
