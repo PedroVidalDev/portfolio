@@ -89,7 +89,7 @@ export const ProjectInfo = styled.div`
 
   h2 {
     ${({ theme }) => css`
-      font-family: ${theme.FONTS.SECONDARY};
+      font-family: ${theme.FONTS.PRIMARY};
       font-size: ${theme.FONT_SIZE.LARGE};
       color: ${theme.COLORS.GRAY_0};
       font-weight: ${theme.FONT_WEIGHT.MEDIUM};

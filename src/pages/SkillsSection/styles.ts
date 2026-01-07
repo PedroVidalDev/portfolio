@@ -97,7 +97,7 @@ export const SkillItem = styled.div`
 
   h2 {
     ${({ theme }) => css`
-      font-family: ${theme.FONTS.SECONDARY};
+      font-family: ${theme.FONTS.PRIMARY};
       font-size: ${theme.FONT_SIZE.LARGE};
       color: ${theme.COLORS.GRAY_0};
       font-weight: ${theme.FONT_WEIGHT.MEDIUM};
@@ -168,7 +168,7 @@ export const SkillsSubtitle = styled.h3<SkillsSubtitleProps>`
     font-weight: ${theme.FONT_WEIGHT.REGULAR};
 
     span {
-      font-family: ${theme.FONTS.SECONDARY}!important;
+      font-family: ${theme.FONTS.PRIMARY}!important;
       font-size: ${theme.FONT_SIZE.XXXLARGE}!important;
       color: ${theme.COLORS.PRIMARY}!important;
       font-weight: ${theme.FONT_WEIGHT.MEDIUM}!important;

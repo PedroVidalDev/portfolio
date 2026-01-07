@@ -29,7 +29,7 @@ export const HomeSectionContainer = styled.div`
   padding: 64px 10%;
   gap: 24px;
 
-  background-color: ${({ theme }) => theme.COLORS.DARK_PRIMARY};
+  background-color: ${({ theme }) => theme.COLORS.DARKER_PRIMARY};
 
   @media (max-width: 1000px) {
     justify-content: center;

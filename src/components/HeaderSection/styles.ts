@@ -105,7 +105,7 @@ export const Option = styled.a`
   cursor: pointer;
 
   ${({ theme }) => css`
-    font-family: ${theme.FONTS.SECONDARY};
+    font-family: ${theme.FONTS.PRIMARY};
     font-size: ${theme.FONT_SIZE.MEDIUM};
     color: ${theme.COLORS.GRAY_0};
     font-weight: ${theme.FONT_WEIGHT.REGULAR};

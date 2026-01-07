@@ -29,7 +29,6 @@ export const themes = {
   },
   FONTS: {
     PRIMARY: "'Poppins', sans-serif",
-    SECONDARY: "'Poppins', sans-serif",
   },
   FONT_SIZE: {
     XXSMALL: '8px',
