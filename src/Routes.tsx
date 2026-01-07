@@ -1,7 +1,12 @@
-import { HeaderSection } from 'components/HeaderSection'
-import { HomeSection } from 'pages/HomeSection'
-import { Route, Routes } from 'react-router-dom'
 import styled from 'styled-components'
+import { Route, Routes } from 'react-router-dom'
+
+import { HomeSection } from 'pages/HomeSection'
+import { SkillsSection } from 'pages/SkillsSection'
+import { ContactSection } from 'pages/ContactSection'
+import { ProjectsSection } from 'pages/ProjectsSection'
+import { HeaderSection } from 'components/HeaderSection'
+import { ExperienceSection } from 'pages/ExperienceSection'
 
 const PortfolioContainer = styled.div`
   display: flex;
@@ -20,6 +25,10 @@ export const AppRoutes = () => {
       <HeaderSection />
       <Routes>
         <Route path='/' element={<HomeSection />} />
+        <Route path='/experience' element={<ExperienceSection />} />
+        <Route path='/skills' element={<SkillsSection />} />
+        <Route path='/projects' element={<ProjectsSection />} />
+        <Route path='contact' element={<ContactSection />} />
       </Routes>
     </PortfolioContainer>
   )

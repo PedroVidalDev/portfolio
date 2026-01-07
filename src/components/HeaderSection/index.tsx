@@ -11,15 +11,20 @@ import {
 import { useLanguageContext } from 'contexts/LanguageContext'
 import { FaBars } from 'react-icons/fa6'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export const HeaderSection = () => {
   const { t } = useTranslation()
+  const navigate = useNavigate()
 
   const { currentLang, changeLanguage } = useLanguageContext()
 
   const [menuExpanded, setMenuExpanded] = useState(false)
 
-  const handleMenu = () => {
+  const handleMenu = (path?: string) => {
+    if (path) {
+      navigate(path)
+    }
     if (menuExpanded) {
       setMenuExpanded(false)
     }
@@ -35,19 +40,17 @@ export const HeaderSection = () => {
         <FaBars size={24} color='#FFFFFF' />
       </MobileMenuIcon>
       <Options expanded={menuExpanded}>
-        <Option href='#home' onClick={handleMenu}>
-          {t('header.option1')}
-        </Option>
-        <Option href='#experience' onClick={handleMenu}>
+        <Option onClick={() => handleMenu('/')}>{t('header.option1')}</Option>
+        <Option onClick={() => handleMenu('/experience')}>
           {t('header.option2')}
         </Option>
-        <Option href='#skills' onClick={handleMenu}>
+        <Option onClick={() => handleMenu('/skills')}>
           {t('header.option3')}
         </Option>
-        <Option href='#projects' onClick={handleMenu}>
+        <Option onClick={() => handleMenu('/projects')}>
           {t('header.option4')}
         </Option>
-        <Option href='#contact' onClick={handleMenu}>
+        <Option onClick={() => handleMenu('/contact')}>
           {t('header.option5')}
         </Option>
         <LanguageSelector
