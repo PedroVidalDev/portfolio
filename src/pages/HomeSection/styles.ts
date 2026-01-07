@@ -24,7 +24,7 @@ export const HomeSectionContainer = styled.div`
   justify-content: space-between;
 
   width: 100%;
-  height: 95vh;
+  height: 100%;
 
   padding: 64px 10%;
   gap: 24px;
@@ -35,6 +35,8 @@ export const HomeSectionContainer = styled.div`
     justify-content: center;
     flex-direction: column-reverse;
   }
+
+  overflow: hidden;
 `
 
 export const TextsContainer = styled.div`

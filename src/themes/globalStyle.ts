@@ -13,6 +13,9 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: "Poppins", sans-serif;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
     }
 
     #root{
@@ -23,6 +26,7 @@ export const GlobalStyle = createGlobalStyle`
         width: 100%;
         height: 100%;
         background-color: #FFF;
+        overflow: hidden;
     }
 
     ::-webkit-scrollbar {
