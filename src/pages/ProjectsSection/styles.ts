@@ -9,8 +9,10 @@ export const ProjectsContainer = styled.div`
   width: 100%;
   height: 100%;
 
-  padding: 64px 10%;
+  padding: 80px 10%;
   gap: 24px;
+
+  overflow-y: scroll;
 `
 
 export const ProjectsHeader = styled.div`
@@ -18,6 +20,15 @@ export const ProjectsHeader = styled.div`
 
   align-items: center;
   justify-content: center;
+
+  h2 {
+    font-size: ${({ theme }) => theme.FONT_SIZE.XXLARGE};
+    text-align: left !important;
+  }
+
+  h2 span {
+    font-size: ${({ theme }) => theme.FONT_SIZE.XXLARGE};
+  }
 `
 
 export const ProjectsContent = styled.div`
