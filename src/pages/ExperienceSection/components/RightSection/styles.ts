@@ -13,7 +13,7 @@ export const RightSectionContainer = styled.div`
 
   padding: 32px 48px;
 
-  background: #02021e48;
+  background: ${({ theme }) => theme.COLORS.DARKER_SECONDARY};
   border: 2px solid ${({ theme }) => theme.COLORS.DARK_PRIMARY};
 
   overflow-y: scroll;

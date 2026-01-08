@@ -21,7 +21,7 @@ export const ContactForm = styled.form`
   display: flex;
   flex-direction: column;
 
-  background-color: #02021e48;
+  background-color: ${({ theme }) => theme.COLORS.DARKER_SECONDARY};
   border: 2px solid ${({ theme }) => theme.COLORS.DARK_PRIMARY};
 
   width: 100%;

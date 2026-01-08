@@ -1,6 +1,7 @@
 export const themes = {
   COLORS: {
     DARKER_PRIMARY: '#010108',
+    DARKER_SECONDARY: '#02021e48',
     DARK_PRIMARY: '#20115b',
     PRIMARY: '#7232f2',
     LIGHT_PRIMARY: '#c876ff',

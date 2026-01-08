@@ -4,7 +4,7 @@ export const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  background-color: ${({ theme }) => theme.COLORS.DARK_PRIMARY};
+  background-color: ${({ theme }) => theme.COLORS.DARKER_PRIMARY};
 
   width: 100%;
   height: 100%;
@@ -45,17 +45,14 @@ export const ProjectItem = styled.div`
 
   width: 100%;
 
-  background-color: ${({ theme }) => theme.COLORS.DARKER_PRIMARY};
+  background-color: ${({ theme }) => theme.COLORS.DARKER_SECONDARY};
+  border: 2px solid ${({ theme }) => theme.COLORS.DARK_PRIMARY};
 
   border-radius: 8px;
 
   transition: 0.5s;
 
   cursor: pointer;
-
-  &:hover {
-    filter: drop-shadow(0px 0px 10px ${({ theme }) => theme.COLORS.GRAY_850});
-  }
 `
 
 interface ProjectImageProps {
