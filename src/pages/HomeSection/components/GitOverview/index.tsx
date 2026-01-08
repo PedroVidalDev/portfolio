@@ -7,16 +7,16 @@ export const GitOverview = () => {
   return (
     <GitOverviewContainer>
       <GitOverviewItem>
-        <strong>150+</strong>
+        <strong>3</strong>
+        <span>{t('home.gitOverview.experienceYears')}</span>
+      </GitOverviewItem>
+      <GitOverviewItem>
+        <strong>10+</strong>
         <span>{t('home.gitOverview.projects')}</span>
       </GitOverviewItem>
       <GitOverviewItem>
-        <strong>2000+</strong>
+        <strong>3000+</strong>
         <span>{t('home.gitOverview.commits')}</span>
-      </GitOverviewItem>
-      <GitOverviewItem>
-        <strong>1000+</strong>
-        <span>{t('home.gitOverview.stars')}</span>
       </GitOverviewItem>
     </GitOverviewContainer>
   )
