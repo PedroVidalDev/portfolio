@@ -5,6 +5,8 @@ import { Title } from 'components/Title/styles'
 import { GitOverview } from './components/GitOverview'
 import { ImageContainer } from './components/ImageContainer'
 
+import File from 'assets/docs/Pedro Vidal.pdf'
+
 import {
   SubTitle,
   TextsContainer,
@@ -29,7 +31,7 @@ export const HomeSection = () => {
           icon='FaFile'
           label='Download CV'
           type='primary'
-          onClick={() => {}}
+          onClick={() => window.open(File, '_blank')}
         />
 
         <GitOverview />
