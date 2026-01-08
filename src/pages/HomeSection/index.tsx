@@ -5,7 +5,12 @@ import { Title } from 'components/Title/styles'
 import { GitOverview } from './components/GitOverview'
 import { ImageContainer } from './components/ImageContainer'
 
-import { HomeSectionContainer, TextsContainer } from './styles'
+import {
+  SubTitle,
+  TextsContainer,
+  ApresentationText,
+  HomeSectionContainer,
+} from './styles'
 
 export const HomeSection = () => {
   const { t } = useTranslation()
@@ -13,12 +18,12 @@ export const HomeSection = () => {
   return (
     <HomeSectionContainer id='home'>
       <TextsContainer>
-        <span>{t('home.currentJob')}</span>
+        <SubTitle>{t('home.currentJob')}</SubTitle>
         <Title>
           <span> {t('home.welcomeTitle.part1')} </span>
           {t('home.welcomeTitle.part2')} <br /> {t('home.welcomeTitle.part3')}
         </Title>
-        <p>{t('home.welcomeText')}</p>
+        <ApresentationText>{t('home.welcomeText')}</ApresentationText>
 
         <Button
           icon='FaFile'

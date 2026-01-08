@@ -6,7 +6,6 @@ import { Icon } from 'components/Icon'
 
 import {
   Social,
-  StarItem,
   ImageContainer as ImageContainerStyled,
   ButtonsContainer,
   ImageContainerScrap,
@@ -15,11 +14,7 @@ import {
 export const ImageContainer = () => {
   return (
     <ImageContainerScrap>
-      <ImageContainerStyled backgroundImage={Profile}>
-        {[...Array(10)].map((_, index) => (
-          <StarItem key={index}></StarItem>
-        ))}
-      </ImageContainerStyled>
+      <ImageContainerStyled backgroundImage={Profile} />
       <ButtonsContainer>
         {SOCIALS.map((social) => (
           <Social onClick={() => window.open(social.url, '_blank')}>
