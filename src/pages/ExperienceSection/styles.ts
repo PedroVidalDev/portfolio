@@ -11,6 +11,8 @@ export const ExperienceContainer = styled.div`
 
   padding: 64px 10%;
   gap: 24px;
+
+  overflow-y: scroll;
 `
 
 export const ExperienceHeader = styled.div`

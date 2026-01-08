@@ -29,6 +29,10 @@ export const GitOverviewItem = styled.div`
       @media (max-width: 1333px) {
         font-size: ${theme.FONT_SIZE.XXLARGE};
       }
+
+      @media (max-width: 1000px) {
+        font-size: ${theme.FONT_SIZE.XLARGE};
+      }
     `};
   }
 
@@ -45,6 +49,10 @@ export const GitOverviewItem = styled.div`
 
       @media (max-width: 1333px) {
         font-size: ${theme.FONT_SIZE.XSMALL};
+      }
+
+      @media (max-width: 1000px) {
+        font-size: ${theme.FONT_SIZE.XXSMALL};
       }
     `};
   }
