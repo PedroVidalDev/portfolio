@@ -6,8 +6,13 @@ interface ButtonContainerProps {
 }
 
 export const ButtonContainer = styled.button<ButtonContainerProps>`
-  display: ${({ hide }) => (hide ? 'none' : 'block')};
+  display: ${({ hide }) => (hide ? 'none' : 'flex')};
+  align-items: center;
+  justify-content: center;
 
+  width: fit-content !important;
+
+  gap: 8px;
   padding: 12px 24px;
 
   border-radius: 8px;

@@ -8,6 +8,7 @@ export const Title = styled.h2`
     font-size: ${theme.FONT_SIZE.XXXXLARGE};
     color: ${theme.COLORS.GRAY_0};
     font-weight: ${theme.FONT_WEIGHT.MEDIUM};
+    text-align: justify;
 
     span {
       font-family: ${theme.FONTS.PRIMARY}!important;

@@ -1,20 +1,11 @@
 import { useTranslation } from 'react-i18next'
 
-import { Icon } from 'components/Icon'
+import { Button } from 'components/Button'
 import { Title } from 'components/Title/styles'
+import { GitOverview } from './components/GitOverview'
+import { ImageContainer } from './components/ImageContainer'
 
-import { SOCIALS } from './consts'
-
-import Profile from 'assets/profile.png'
-
-import {
-  ButtonsContainer,
-  HomeSectionContainer,
-  ImageContainer,
-  Social,
-  StarItem,
-  TextsContainer,
-} from './styles'
+import { HomeSectionContainer, TextsContainer } from './styles'
 
 export const HomeSection = () => {
   const { t } = useTranslation()
@@ -29,19 +20,17 @@ export const HomeSection = () => {
         </Title>
         <p>{t('home.welcomeText')}</p>
 
-        <ButtonsContainer>
-          {SOCIALS.map((social) => (
-            <Social onClick={() => window.open(social.url, '_blank')}>
-              <Icon name={social.iconName} color='PRIMARY' size={32} />
-            </Social>
-          ))}
-        </ButtonsContainer>
+        <Button
+          icon='FaFile'
+          label='Download CV'
+          type='primary'
+          onClick={() => {}}
+        />
+
+        <GitOverview />
       </TextsContainer>
-      <ImageContainer backgroundImage={Profile}>
-        {[...Array(10)].map((_, index) => (
-          <StarItem key={index}></StarItem>
-        ))}
-      </ImageContainer>
+
+      <ImageContainer />
     </HomeSectionContainer>
   )
 }

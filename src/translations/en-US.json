@@ -17,7 +17,12 @@
             "part2": " I'm ",
             "part3": " Pedro Vidal"
         },
-        "welcomeText": "I am a passionate software developer with experience in building fullstack applications with a large number of stacks, always eager to learn new technologies and improve my skills."
+        "welcomeText": "I am a passionate software developer with experience in building fullstack applications with a large number of stacks, always eager to learn new technologies and improve my skills.",
+        "gitOverview": {
+            "projects": "Projects",
+            "stars": "Stars",
+            "commits": "Commits"
+        }
     },
     "experience": {
         "experienceTitle": {
