@@ -66,7 +66,9 @@
             "message": "Sua Mensagem *"
         },
         "contactText": "Sinta-se à vontade para entrar em contato para colaborações ou apenas para dar um oi! Estou sempre aberto para discutir novos projetos e oportunidades.",
-        "contactButton": "Enviar mensagem"
+        "contactButton": "Enviar mensagem",
+        "successMessage": "Mensagem enviada com sucesso!",
+        "errorMessage": "Falha ao enviar a mensagem, por favor tente novamente."
     },
     "footer": {
         "footerText": "Todos os direitos reservados."

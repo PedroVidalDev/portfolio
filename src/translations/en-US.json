@@ -66,7 +66,9 @@
             "message": "Your Message *"
         },
         "contactText": "Feel free to reach out for collaborations or just a friendly hello! I'm always open to discussing new projects and opportunities.",
-        "contactButton": "Submit message"
+        "contactButton": "Submit message",
+        "successMessage": "Message sent successfully!",
+        "errorMessage": "Failed to send the message, please try again."
     },
     "footer": {
         "footerText": "All rights reserved."

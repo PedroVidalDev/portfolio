@@ -58,7 +58,7 @@ export const ContactSection = () => {
       })
       .then(
         (_response) => {
-          toastEmmiter('Message sent successfully!', 'success')
+          toastEmmiter(t('contact.successMessage'), 'success')
           setFormData({
             name: '',
             subject: '',
@@ -68,7 +68,7 @@ export const ContactSection = () => {
           })
         },
         (_err) => {
-          toastEmmiter('Failed to send the message, please try again.', 'error')
+          toastEmmiter(t('contact.errorMessage'), 'error')
         },
       )
   }
