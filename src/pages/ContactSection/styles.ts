@@ -4,7 +4,7 @@ export const ContactSectionContainer = styled.div`
   display: flex;
   flex-direction: row;
 
-  background-color: ${({ theme }) => theme.COLORS.DARK_PRIMARY};
+  background-color: ${({ theme }) => theme.COLORS.DARKER_PRIMARY};
 
   width: 100%;
   height: 100%;
@@ -21,9 +21,12 @@ export const ContactForm = styled.form`
   display: flex;
   flex-direction: column;
 
-  background-color: ${({ theme }) => theme.COLORS.DARKER_PRIMARY};
+  background-color: #02021e48;
+  border: 2px solid ${({ theme }) => theme.COLORS.DARK_PRIMARY};
 
   width: 100%;
+
+  border-radius: 8px;
 
   gap: 16px;
   padding: 24px;
@@ -91,5 +94,9 @@ export const ContactTextSection = styled.div`
     font-size: ${({ theme }) => theme.FONT_SIZE.SMALL};
     font-weight: ${({ theme }) => theme.FONT_WEIGHT.REGULAR};
     color: ${({ theme }) => theme.COLORS.GRAY_500};
+  }
+
+  h2 {
+    text-align: left !important;
   }
 `
