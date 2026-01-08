@@ -34,7 +34,7 @@ export const themes = {
     XXSMALL: '8px',
     XSMALL: '10px',
     SMALL: '12px',
-    MEDIUM: '16px',
+    MEDIUM: '14px',
     LARGE: '20px',
     XLARGE: '24px',
     XXLARGE: '32px',

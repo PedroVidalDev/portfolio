@@ -11,10 +11,10 @@ export const Title = styled.h2`
     text-align: justify;
 
     span {
-      font-family: ${theme.FONTS.PRIMARY}!important;
-      font-size: ${theme.FONT_SIZE.XXXXLARGE}!important;
-      color: ${theme.COLORS.PRIMARY}!important;
-      font-weight: ${theme.FONT_WEIGHT.MEDIUM}!important;
+      font-family: ${theme.FONTS.PRIMARY};
+      font-size: ${theme.FONT_SIZE.XXXXLARGE};
+      color: ${theme.COLORS.PRIMARY};
+      font-weight: ${theme.FONT_WEIGHT.MEDIUM};
     }
   `};
 
@@ -23,7 +23,7 @@ export const Title = styled.h2`
       font-size: ${theme.FONT_SIZE.XXXLARGE};
 
       span {
-        font-size: ${theme.FONT_SIZE.XXXLARGE}!important;
+        font-size: ${theme.FONT_SIZE.XXXLARGE};
       }
     `};
   }

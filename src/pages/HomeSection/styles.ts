@@ -8,7 +8,7 @@ export const HomeSectionContainer = styled.div`
   width: 100%;
   height: 100%;
 
-  padding: 64px 10%;
+  padding: 80px 10%;
   gap: 24px;
 
   background-color: ${({ theme }) => theme.COLORS.DARKER_PRIMARY};
