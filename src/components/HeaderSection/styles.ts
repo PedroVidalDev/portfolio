@@ -101,14 +101,20 @@ export const Options = styled.nav<OptionsProps>`
   }
 `
 
-export const Option = styled.a`
+interface OptionProps {
+  selected: boolean
+}
+
+export const Option = styled.a<OptionProps>`
   cursor: pointer;
 
-  ${({ theme }) => css`
+  ${({ theme, selected }) => css`
     font-family: ${theme.FONTS.PRIMARY};
     font-size: ${theme.FONT_SIZE.MEDIUM};
-    color: ${theme.COLORS.GRAY_0};
+    color: ${selected ? theme.COLORS.PRIMARY : theme.COLORS.GRAY_0};
     font-weight: ${theme.FONT_WEIGHT.REGULAR};
+
+    border-bottom: ${selected ? `2px solid ${theme.COLORS.PRIMARY}` : 'none'};
 
     @media (max-width: 1333px) {
       font-size: ${theme.FONT_SIZE.XSMALL};

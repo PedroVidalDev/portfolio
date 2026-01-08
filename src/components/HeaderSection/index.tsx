@@ -17,6 +17,8 @@ export const HeaderSection = () => {
   const { t } = useTranslation()
   const navigate = useNavigate()
 
+  const endpoint = window.location.pathname.replaceAll('/', '')
+
   const { currentLang, changeLanguage } = useLanguageContext()
 
   const [menuExpanded, setMenuExpanded] = useState(false)
@@ -40,17 +42,31 @@ export const HeaderSection = () => {
         <FaBars size={24} color='#FFFFFF' />
       </MobileMenuIcon>
       <Options expanded={menuExpanded}>
-        <Option onClick={() => handleMenu('/')}>{t('header.option1')}</Option>
-        <Option onClick={() => handleMenu('/experience')}>
+        <Option selected={endpoint === ''} onClick={() => handleMenu('/')}>
+          {t('header.option1')}
+        </Option>
+        <Option
+          selected={endpoint === 'experience'}
+          onClick={() => handleMenu('/experience')}
+        >
           {t('header.option2')}
         </Option>
-        <Option onClick={() => handleMenu('/skills')}>
+        <Option
+          selected={endpoint === 'skills'}
+          onClick={() => handleMenu('/skills')}
+        >
           {t('header.option3')}
         </Option>
-        <Option onClick={() => handleMenu('/projects')}>
+        <Option
+          selected={endpoint === 'projects'}
+          onClick={() => handleMenu('/projects')}
+        >
           {t('header.option4')}
         </Option>
-        <Option onClick={() => handleMenu('/contact')}>
+        <Option
+          selected={endpoint === 'contact'}
+          onClick={() => handleMenu('/contact')}
+        >
           {t('header.option5')}
         </Option>
         <LanguageSelector
