@@ -12,6 +12,8 @@ export const ContactSectionContainer = styled.div`
   padding: 128px 10%;
   gap: 48px;
 
+  animation: fadeIn 0.5s ease-in-out;
+
   @media (max-width: 925px) {
     flex-direction: column-reverse;
   }

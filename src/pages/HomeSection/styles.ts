@@ -15,6 +15,8 @@ export const HomeSectionContainer = styled.div`
 
   overflow-y: scroll;
 
+  animation: fadeIn 0.5s ease-in-out;
+
   @media (max-width: 1000px) {
     justify-content: center;
     flex-direction: column;

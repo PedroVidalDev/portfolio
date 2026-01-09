@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
         justify-content: flex-start;
         width: 100%;
         height: 100%;
-        background-color: #FFF;
+        background-color: #010108;
         overflow: hidden;
     }
 
@@ -50,5 +50,16 @@ export const GlobalStyle = createGlobalStyle`
     * {
         scrollbar-width: thin;
         scrollbar-color: #9333ea #f1f1f1;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 `

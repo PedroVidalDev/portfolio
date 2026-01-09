@@ -52,12 +52,6 @@ export const HeaderSection = () => {
           {t('header.option2')}
         </Option>
         <Option
-          selected={endpoint === 'skills'}
-          onClick={() => handleMenu('/skills')}
-        >
-          {t('header.option3')}
-        </Option>
-        <Option
           selected={endpoint === 'projects'}
           onClick={() => handleMenu('/projects')}
         >

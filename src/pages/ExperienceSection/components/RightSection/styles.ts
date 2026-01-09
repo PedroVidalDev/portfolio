@@ -33,6 +33,8 @@ export const ExperienceItemsContainer = styled.div`
   flex-direction: column;
 
   width: 100%;
+
+  animation: fadeIn 0.5s ease-in-out;
 `
 
 export const ExperienceItemDetails = styled.div`

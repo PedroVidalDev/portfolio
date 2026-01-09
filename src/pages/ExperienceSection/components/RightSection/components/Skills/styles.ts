@@ -7,6 +7,8 @@ export const SkillsItemsContainer = styled.div`
   width: 100%;
 
   gap: 32px;
+
+  animation: fadeIn 0.5s ease-in-out;
 `
 
 export const SkillsTopicContainer = styled.div`

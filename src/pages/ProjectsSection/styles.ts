@@ -12,6 +12,8 @@ export const ProjectsContainer = styled.div`
   padding: 80px 10%;
   gap: 24px;
 
+  animation: fadeIn 0.5s ease-in-out;
+
   overflow-y: scroll;
 `
 

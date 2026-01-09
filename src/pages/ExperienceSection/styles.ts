@@ -13,4 +13,6 @@ export const ExperienceContainer = styled.div`
   gap: 64px;
 
   overflow-y: scroll;
+
+  animation: fadeIn 0.5s ease-in-out;
 `
