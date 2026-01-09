@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components'
 
 export const RightSectionContainer = styled.div`
-  flex: 1;
+  width: 100%;
+  min-width: 370px;
 
   display: flex;
   flex-direction: column;
@@ -17,6 +18,11 @@ export const RightSectionContainer = styled.div`
   border: 2px solid ${({ theme }) => theme.COLORS.DARK_PRIMARY};
 
   overflow-y: scroll;
+
+  @media (max-width: 1000px) {
+    min-width: 100%;
+    overflow-y: visible;
+  }
 `
 
 export const RightSectionContainerTitle = styled.h2`

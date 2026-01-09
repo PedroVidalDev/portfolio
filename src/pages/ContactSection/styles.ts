@@ -9,13 +9,21 @@ export const ContactSectionContainer = styled.div`
   width: 100%;
   height: 100%;
 
-  padding: 128px 10%;
+  align-items: center;
+  justify-content: center;
+
+  padding: 80px 10%;
   gap: 48px;
 
   animation: fadeIn 0.5s ease-in-out;
 
   @media (max-width: 925px) {
     flex-direction: column-reverse;
+
+    justify-content: flex-end;
+
+    margin-top: 80px;
+    gap: 16px;
   }
 `
 
@@ -27,6 +35,7 @@ export const ContactForm = styled.form`
   border: 2px solid ${({ theme }) => theme.COLORS.DARK_PRIMARY};
 
   width: 100%;
+  height: 80%;
 
   border-radius: 8px;
 

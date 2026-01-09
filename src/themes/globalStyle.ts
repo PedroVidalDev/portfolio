@@ -43,7 +43,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     ::-webkit-scrollbar-thumb:hover {
-        background: #7e22ce;
+        background: #7e22ce!important;
     }
 
     /* Firefox */

@@ -13,8 +13,6 @@ export const ProjectsContainer = styled.div`
   gap: 24px;
 
   animation: fadeIn 0.5s ease-in-out;
-
-  overflow-y: scroll;
 `
 
 export const ProjectsHeader = styled.div`

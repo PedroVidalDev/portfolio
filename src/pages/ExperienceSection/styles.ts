@@ -12,7 +12,9 @@ export const ExperienceContainer = styled.div`
   padding: 80px 10%;
   gap: 64px;
 
-  overflow-y: scroll;
-
   animation: fadeIn 0.5s ease-in-out;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 `

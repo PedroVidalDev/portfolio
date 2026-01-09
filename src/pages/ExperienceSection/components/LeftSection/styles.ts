@@ -3,6 +3,10 @@ import styled, { css } from 'styled-components'
 export const ExperienceLeftSection = styled.div`
   display: flex;
   flex-direction: column;
+
+  width: 100%;
+  max-width: 400px;
+
   gap: 24px;
 
   h2 {
@@ -21,6 +25,10 @@ export const ExperienceLeftSection = styled.div`
   button {
     width: 100% !important;
   }
+
+  @media (max-width: 1000px) {
+    max-width: 100%;
+  }
 `
 
 interface ExperienceItemProps {
@@ -30,7 +38,7 @@ interface ExperienceItemProps {
 export const ExperienceItem = styled.div<ExperienceItemProps>`
   display: flex;
 
-  width: 440px;
+  width: 100%;
   height: 55px;
 
   align-items: center;
