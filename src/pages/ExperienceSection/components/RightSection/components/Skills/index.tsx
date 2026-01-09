@@ -10,12 +10,15 @@ import {
   SkillsTopicItems,
   SkillTitle,
 } from './styles'
+import { useTranslation } from 'react-i18next'
 
 export const Skills = () => {
+  const { t } = useTranslation()
+
   return (
     <SkillsItemsContainer>
       <SkillsTopicContainer>
-        <SkillTitle>Skills & Tools</SkillTitle>
+        <SkillTitle>{t('skill.skillLanguageTitle')}</SkillTitle>
         <SkillsTopicItems>
           {SKILLS_LANGUAGES.map((skill) => (
             <SkillItem key={skill.name}>
@@ -36,7 +39,7 @@ export const Skills = () => {
       </SkillsTopicContainer>
 
       <SkillsTopicContainer>
-        <SkillTitle>Skills & Tools</SkillTitle>
+        <SkillTitle>{t('skill.skillTollsTitle')}</SkillTitle>
         <SkillsTopicItems>
           {SKILLS_TOOLS.map((skill) => (
             <SkillItem key={skill.name}>

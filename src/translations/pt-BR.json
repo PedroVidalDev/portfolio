@@ -35,16 +35,8 @@
             "part1": "Minhas",
             "part2": " Habilidades"
         },
-        "skillLanguageTitle": {
-            "part1": "Linguagens",
-            "part2": "&",
-            "part3": "Frameworks"
-        },
-        "skillTollsTitle": {
-            "part1": "Ferramentas",
-            "part2": "&",
-            "part3": "Plataformas"
-        }
+        "skillLanguageTitle": "Linguagens & Frameworks",
+        "skillTollsTitle": "Ferramentas & Plataformas"
     },
     "project": {
         "projectTitle": {
