@@ -13,6 +13,9 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: "Poppins", sans-serif;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
     }
 
     #root{
@@ -22,7 +25,8 @@ export const GlobalStyle = createGlobalStyle`
         justify-content: flex-start;
         width: 100%;
         height: 100%;
-        background-color: #FFF;
+        background-color: #010108;
+        overflow: hidden;
     }
 
     ::-webkit-scrollbar {
@@ -39,12 +43,23 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     ::-webkit-scrollbar-thumb:hover {
-        background: #7e22ce;
+        background: #7e22ce!important;
     }
 
     /* Firefox */
     * {
         scrollbar-width: thin;
         scrollbar-color: #9333ea #f1f1f1;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 `

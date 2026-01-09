@@ -17,7 +17,12 @@
             "part2": " I'm ",
             "part3": " Pedro Vidal"
         },
-        "welcomeText": "I am a passionate software developer with experience in building fullstack applications with a large number of stacks, always eager to learn new technologies and improve my skills."
+        "welcomeText": "I am a passionate software developer with experience in building fullstack applications with a large number of stacks, always eager to learn new technologies and improve my skills.",
+        "gitOverview": {
+            "projects": "Projects",
+            "experienceYears": "Experience Years",
+            "commits": "Commits"
+        }
     },
     "experience": {
         "experienceTitle": {
@@ -30,16 +35,8 @@
             "part1": "My",
             "part2": " Skills"
         },
-        "skillLanguageTitle": {
-            "part1": "Languages",
-            "part2": "&",
-            "part3": "Frameworks"
-        },
-        "skillTollsTitle": {
-            "part1": "Tools",
-            "part2": "&",
-            "part3": "Platforms"
-        }
+        "skillLanguageTitle": "Languages & Frameworks",
+        "skillTollsTitle": "Tools & Platforms"
     },
     "project": {
         "projectTitle": {
@@ -61,7 +58,9 @@
             "message": "Your Message *"
         },
         "contactText": "Feel free to reach out for collaborations or just a friendly hello! I'm always open to discussing new projects and opportunities.",
-        "contactButton": "Submit message"
+        "contactButton": "Submit message",
+        "successMessage": "Message sent successfully!",
+        "errorMessage": "Failed to send the message, please try again."
     },
     "footer": {
         "footerText": "All rights reserved."

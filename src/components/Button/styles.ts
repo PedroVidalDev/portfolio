@@ -1,13 +1,21 @@
 import styled, { css } from 'styled-components'
 
+import type { themes } from '@themes/'
+
 interface ButtonContainerProps {
   type: 'primary' | 'secondary'
   hide: boolean
+  color: keyof typeof themes.COLORS
 }
 
 export const ButtonContainer = styled.button<ButtonContainerProps>`
-  display: ${({ hide }) => (hide ? 'none' : 'block')};
+  display: ${({ hide }) => (hide ? 'none' : 'flex')};
+  align-items: center;
+  justify-content: center;
 
+  width: fit-content !important;
+
+  gap: 8px;
   padding: 12px 24px;
 
   border-radius: 8px;
@@ -15,13 +23,13 @@ export const ButtonContainer = styled.button<ButtonContainerProps>`
   cursor: pointer;
 
   color: white;
-  ${({ theme, type }) => css`
+  ${({ theme, type, color }) => css`
     font-size: ${theme.FONT_SIZE.SMALL};
     font-family: ${theme.FONTS.PRIMARY};
     font-weight: ${theme.FONT_WEIGHT.MEDIUM};
 
     background-color: ${type === 'primary'
-      ? theme.COLORS.PRIMARY
+      ? theme.COLORS[color]
       : 'transparent'};
 
     border: 2px solid;

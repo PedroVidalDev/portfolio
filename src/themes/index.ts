@@ -1,8 +1,11 @@
 export const themes = {
   COLORS: {
-    DARKER_PRIMARY: '#0c0b0d',
-    DARK_PRIMARY: '#19181a',
-    PRIMARY: '#860dc3ff',
+    DARKER_PRIMARY: '#010108',
+    DARKER_SECONDARY: '#02021e48',
+    DARK_PRIMARY: '#20115b',
+    PRIMARY: '#7232f2',
+    LIGHT_PRIMARY: '#c876ff',
+    LIGHTER_PRIMARY: '#f6b3e5',
 
     GRAY_0: '#ffffff',
     GRAY_50: '#f7f7f7',
@@ -27,18 +30,17 @@ export const themes = {
   },
   FONTS: {
     PRIMARY: "'Poppins', sans-serif",
-    SECONDARY: "'Poppins', sans-serif",
   },
   FONT_SIZE: {
     XXSMALL: '8px',
     XSMALL: '10px',
     SMALL: '12px',
-    MEDIUM: '16px',
+    MEDIUM: '14px',
     LARGE: '20px',
     XLARGE: '24px',
     XXLARGE: '32px',
     XXXLARGE: '48px',
-    XXXXLARGE: '84px',
+    XXXXLARGE: '72px',
   },
   FONT_WEIGHT: {
     LIGHT: 300,
