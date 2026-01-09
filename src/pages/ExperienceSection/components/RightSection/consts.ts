@@ -18,6 +18,10 @@ export const ExperienceTitleMap = {
     en: 'Education',
     pt: 'Formação',
   },
+  skills: {
+    en: 'Skills',
+    pt: 'Habilidades',
+  },
 }
 
 export const EXPERIENCE_ITEMS: ExperienceItem[] = [

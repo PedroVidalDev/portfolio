@@ -18,6 +18,14 @@ export const EXPERIENCE_ITEMS: ExperienceItemType[] = [
     value: 'experience',
   },
   {
+    icon: 'FaCode',
+    title: {
+      en: 'Skills',
+      pt: 'Habilidades',
+    },
+    value: 'skills',
+  },
+  {
     icon: 'FaSchool',
     title: {
       en: 'Education',
