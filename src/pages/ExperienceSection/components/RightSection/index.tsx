@@ -7,6 +7,7 @@ import type { RightSectionProps } from './types'
 import { RightSectionContainer, RightSectionContainerTitle } from './styles'
 import { Experience } from './components/Experience'
 import { Education } from './components/Education'
+import { Skills } from './components/Skills'
 
 export const RightSection = (props: RightSectionProps) => {
   const { selectedExperienceItem } = props
@@ -24,6 +25,8 @@ export const RightSection = (props: RightSectionProps) => {
         }
       </RightSectionContainerTitle>
       {selectedExperienceItem === 'experience' && <Experience />}
+
+      {selectedExperienceItem === 'skills' && <Skills />}
 
       {selectedExperienceItem === 'education' && <Education />}
     </RightSectionContainer>
