@@ -9,6 +9,8 @@ export const GlobalStyle = createGlobalStyle`
         position: relative;
 
         scroll-behavior: smooth;
+
+        scrollbar-width: thin;
     }
 
     body {
@@ -29,29 +31,37 @@ export const GlobalStyle = createGlobalStyle`
         overflow: hidden;
     }
 
-    ::-webkit-scrollbar {
-        width: 10px;
+    *::-webkit-scrollbar {
+        width: 8px;
+        background-color: transparent;
     }
 
-        /* Track */
-    ::-webkit-scrollbar-track {
-        background: #f1f1f1; 
-    }
-        
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-        background: #888; 
+    *::-webkit-scrollbar-track {
+        background: transparent;
     }
 
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-        background: #555; 
+    *::-webkit-scrollbar-thumb {
+        background-color: #9333ea; 
+        border-radius: 4px;
+    }
+
+    *::-webkit-scrollbar-button {
+        display: none;
+        height: 0;
+        width: 0;
+    }
+
+    *::-webkit-scrollbar-button:start:decrement,
+    *::-webkit-scrollbar-button:end:increment {
+        display: none;
+        height: 0;
+        width: 0;
     }
 
     /* Firefox */
     * {
         scrollbar-width: thin;
-        scrollbar-color: #9333ea #f1f1f1;
+        scrollbar-color: #9333ea transparent; /* Changed second color to transparent */
     }
 
     @keyframes fadeIn {
