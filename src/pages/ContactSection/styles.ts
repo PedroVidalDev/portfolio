@@ -68,6 +68,16 @@ export const ContactInput = styled.input`
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.REGULAR};
   color: ${({ theme }) => theme.COLORS.GRAY_500};
 
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &[type='number'] {
+    -moz-appearance: textfield;
+  }
+
   &:focus {
     outline: none;
   }

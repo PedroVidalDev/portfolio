@@ -31,10 +31,31 @@ export const ContactSection = () => {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }))
+
+    if (name === 'phone') {
+      const numbers = value.replace(/\D/g, '')
+
+      let formatted = ''
+      if (numbers.length <= 2) {
+        formatted = numbers
+      } else if (numbers.length <= 7) {
+        formatted = `(${numbers.slice(0, 2)}) ${numbers.slice(2)}`
+      } else if (numbers.length <= 11) {
+        formatted = `(${numbers.slice(0, 2)}) ${numbers.slice(2, 7)}-${numbers.slice(7)}`
+      } else {
+        formatted = `(${numbers.slice(0, 2)}) ${numbers.slice(2, 7)}-${numbers.slice(7, 11)}`
+      }
+
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: formatted,
+      }))
+    } else {
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: value,
+      }))
+    }
   }
 
   const handleSubmit = () => {
