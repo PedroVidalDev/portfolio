@@ -68,7 +68,7 @@ export const ContactSection = () => {
       return
     }
 
-    if (formData.email && !/\S+@\S+\.\S+/.test(formData.email)) {
+    if (!formData.email || !/\S+@\S+\.\S+/.test(formData.email)) {
       toastEmmiter(t('contact.invalidEmail'), 'error')
       return
     }
