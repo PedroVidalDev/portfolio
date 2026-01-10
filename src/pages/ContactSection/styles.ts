@@ -36,6 +36,7 @@ export const ContactForm = styled.form`
 
   width: 100%;
   height: 80%;
+  min-height: 520px;
 
   border-radius: 8px;
 
