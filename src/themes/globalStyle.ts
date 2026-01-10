@@ -30,20 +30,22 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     ::-webkit-scrollbar {
-        width: 12px;
+        width: 10px;
     }
 
+        /* Track */
     ::-webkit-scrollbar-track {
-        background: #f1f1f1;
+        background: #f1f1f1; 
     }
-
+        
+    /* Handle */
     ::-webkit-scrollbar-thumb {
-        background: #9333ea;
-        border-radius: 6px;
+        background: #888; 
     }
 
+    /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-        background: #7e22ce!important;
+        background: #555; 
     }
 
     /* Firefox */
