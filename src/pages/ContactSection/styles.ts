@@ -7,7 +7,6 @@ export const ContactSectionContainer = styled.div`
   background-color: ${({ theme }) => theme.COLORS.DARKER_PRIMARY};
 
   width: 100%;
-  height: 100%;
 
   align-items: center;
   justify-content: center;
@@ -22,7 +21,6 @@ export const ContactSectionContainer = styled.div`
 
     justify-content: flex-end;
 
-    margin-top: 80px;
     gap: 16px;
   }
 `
