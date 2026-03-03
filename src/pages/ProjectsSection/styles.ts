@@ -7,7 +7,6 @@ export const ProjectsContainer = styled.div`
   background-color: ${({ theme }) => theme.COLORS.DARKER_PRIMARY};
 
   width: 100%;
-  height: 100%;
 
   padding: 80px 10%;
   gap: 24px;
