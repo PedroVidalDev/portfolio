@@ -11,7 +11,12 @@ export const HomeSectionContainer = styled.div`
   padding: 80px 10%;
   gap: 24px;
 
-  background-color: ${({ theme }) => theme.COLORS.DARKER_PRIMARY};
+  background: ${({ theme }) => theme.COLORS.DARKER_SECONDARY};
+  background: radial-gradient(
+    circle,
+    ${({ theme }) => theme.COLORS.DARKER_SECONDARY} 0%,
+    ${({ theme }) => theme.COLORS.DARKER_PRIMARY} 100%
+  );
 
   overflow-y: scroll;
 

@@ -4,7 +4,12 @@ export const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  background-color: ${({ theme }) => theme.COLORS.DARKER_PRIMARY};
+  background: ${({ theme }) => theme.COLORS.DARKER_SECONDARY};
+  background: radial-gradient(
+    circle,
+    ${({ theme }) => theme.COLORS.DARKER_SECONDARY} 0%,
+    ${({ theme }) => theme.COLORS.DARKER_PRIMARY} 100%
+  );
 
   width: 100%;
   height: 100%;
