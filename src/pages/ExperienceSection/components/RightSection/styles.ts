@@ -29,6 +29,10 @@ export const RightSectionContainerTitle = styled.h2`
   ${({ theme }) => css`
     font-size: ${theme.FONT_SIZE.XXLARGE};
     color: ${theme.COLORS.GRAY_0};
+
+    @media (max-width: 1500px) {
+      font-size: ${theme.FONT_SIZE.XLARGE};
+    }
   `}
 
   margin-bottom: 16px;
@@ -62,6 +66,10 @@ export const ExperienceItemDetails = styled.div`
       font-size: ${theme.FONT_SIZE.XSMALL};
       color: ${theme.COLORS.LIGHTER_PRIMARY};
       font-weight: ${theme.FONT_WEIGHT.BOLD};
+
+      @media (max-width: 1500px) {
+        font-size: ${theme.FONT_SIZE.XXSMALL};
+      }
     `}
   }
 
@@ -69,6 +77,10 @@ export const ExperienceItemDetails = styled.div`
     ${({ theme }) => css`
       font-size: ${theme.FONT_SIZE.LARGE};
       color: ${theme.COLORS.GRAY_0};
+
+      @media (max-width: 1500px) {
+        font-size: ${theme.FONT_SIZE.MEDIUM};
+      }
     `}
   }
 
@@ -77,6 +89,10 @@ export const ExperienceItemDetails = styled.div`
       font-size: ${theme.FONT_SIZE.XSMALL};
       color: ${theme.COLORS.LIGHT_PRIMARY};
       font-weight: ${theme.FONT_WEIGHT.BOLD};
+
+      @media (max-width: 1500px) {
+        font-size: ${theme.FONT_SIZE.XXSMALL};
+      }
     `}
   }
 
@@ -85,6 +101,10 @@ export const ExperienceItemDetails = styled.div`
       font-size: ${theme.FONT_SIZE.SMALL};
       color: ${theme.COLORS.GRAY_600};
       font-weight: ${theme.FONT_WEIGHT.BOLD};
+
+      @media (max-width: 1500px) {
+        font-size: ${theme.FONT_SIZE.XSMALL};
+      }
     `}
   }
 
@@ -92,6 +112,10 @@ export const ExperienceItemDetails = styled.div`
     ${({ theme }) => css`
       font-size: ${theme.FONT_SIZE.SMALL};
       color: ${theme.COLORS.GRAY_200};
+
+      @media (max-width: 1500px) {
+        font-size: ${theme.FONT_SIZE.XSMALL};
+      }
     `}
   }
 `

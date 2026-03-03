@@ -27,7 +27,12 @@ export const GlobalStyle = createGlobalStyle`
         justify-content: flex-start;
         width: 100%;
         height: 100%;
-        background-color: #010108;
+        background: #010108;
+        background: radial-gradient(
+            circle,
+            #0b0321 0%,
+            #010108 100%
+        );
         overflow: hidden;
     }
 

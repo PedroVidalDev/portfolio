@@ -82,11 +82,22 @@ export const ExperienceItemLeftSide = styled.div`
   align-items: center;
 
   gap: 12px;
+
+  @media (max-width: 1500px) {
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
 `
 
 export const ExperienceItemLabel = styled.span`
   ${({ theme }) => css`
     font-size: ${theme.FONT_SIZE.MEDIUM};
     color: ${theme.COLORS.GRAY_0};
+
+    @media (max-width: 1500px) {
+      font-size: ${theme.FONT_SIZE.SMALL};
+    }
   `}
 `

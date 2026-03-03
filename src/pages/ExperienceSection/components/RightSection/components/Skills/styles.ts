@@ -24,6 +24,10 @@ export const SkillTitle = styled.h3`
   ${({ theme }) => css`
     font-size: ${theme.FONT_SIZE.LARGE};
     color: ${theme.COLORS.GRAY_0};
+
+    @media (max-width: 1500px) {
+      font-size: ${theme.FONT_SIZE.MEDIUM};
+    }
   `}
 `
 
@@ -64,5 +68,10 @@ export const SkillItem = styled.div`
   &:hover {
     border-color: ${({ theme }) => theme.COLORS.PRIMARY};
     background-color: ${({ theme }) => theme.COLORS.DARK_PRIMARY};
+  }
+
+  @media (max-width: 1500px) {
+    width: 62px;
+    height: 62px;
   }
 `

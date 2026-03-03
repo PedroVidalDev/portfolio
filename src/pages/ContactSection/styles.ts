@@ -4,15 +4,7 @@ export const ContactSectionContainer = styled.div`
   display: flex;
   flex-direction: row;
 
-  background: ${({ theme }) => theme.COLORS.DARKER_SECONDARY};
-  background: radial-gradient(
-    circle,
-    #27165548 0%,
-    ${({ theme }) => theme.COLORS.DARKER_PRIMARY} 100%
-  );
-
   width: 100%;
-  height: 100%;
 
   align-items: center;
   justify-content: center;
@@ -123,6 +115,10 @@ export const ContactTextSection = styled.div`
     font-size: ${({ theme }) => theme.FONT_SIZE.SMALL};
     font-weight: ${({ theme }) => theme.FONT_WEIGHT.REGULAR};
     color: ${({ theme }) => theme.COLORS.GRAY_500};
+
+    @media (max-width: 1500px) {
+      font-size: ${({ theme }) => theme.FONT_SIZE.XSMALL};
+    }
   }
 
   h2 {
