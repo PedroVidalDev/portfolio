@@ -14,7 +14,7 @@ export const HomeSectionContainer = styled.div`
   background: ${({ theme }) => theme.COLORS.DARKER_SECONDARY};
   background: radial-gradient(
     circle,
-    ${({ theme }) => theme.COLORS.DARKER_SECONDARY} 0%,
+    #27165548 0%,
     ${({ theme }) => theme.COLORS.DARKER_PRIMARY} 100%
   );
 
