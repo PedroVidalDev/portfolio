@@ -13,7 +13,7 @@ export const ImageContainerScrap = styled.div`
   height: 100%;
   width: fit-content;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1084px) {
     height: fit-content;
     width: 100%;
 
@@ -37,7 +37,7 @@ export const ImageContainer = styled.div<ImageContainerProps>`
     min-width: 360px;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1084px) {
     height: 0px;
     min-width: 100%;
   }
@@ -53,11 +53,11 @@ export const ButtonsContainer = styled.div`
 
   justify-content: center;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1084px) {
     flex-direction: row;
 
     height: fit-content;
-    width: 100%;
+    max-width: fit-content;
   }
 `
 
@@ -88,5 +88,14 @@ export const Social = styled.div`
     filter: brightness(1.8)
       drop-shadow(0px 0px 20px ${({ theme }) => theme.COLORS.PRIMARY})
       drop-shadow(0px 0px 40px ${({ theme }) => theme.COLORS.PRIMARY});
+  }
+
+  @media (max-width: 1333px) {
+    padding: 8px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
   }
 `

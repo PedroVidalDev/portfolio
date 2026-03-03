@@ -6,6 +6,11 @@ export const GitOverviewContainer = styled.div`
   width: 100%;
 
   justify-content: space-between;
+
+  @media (max-width: 1084px) {
+    gap: 32px;
+    max-width: fit-content;
+  }
 `
 
 export const GitOverviewItem = styled.div`
@@ -26,11 +31,11 @@ export const GitOverviewItem = styled.div`
       color: ${theme.COLORS.LIGHTER_PRIMARY};
       font-weight: ${theme.FONT_WEIGHT.BOLD};
 
-      @media (max-width: 1333px) {
+      @media (max-width: 1500px) {
         font-size: ${theme.FONT_SIZE.XXLARGE};
       }
 
-      @media (max-width: 1000px) {
+      @media (max-width: 1084px) {
         font-size: ${theme.FONT_SIZE.XLARGE};
       }
     `};
@@ -47,11 +52,11 @@ export const GitOverviewItem = styled.div`
       color: ${theme.COLORS.GRAY_0};
       font-weight: ${theme.FONT_WEIGHT.BOLD};
 
-      @media (max-width: 1333px) {
+      @media (max-width: 1500px) {
         font-size: ${theme.FONT_SIZE.XSMALL};
       }
 
-      @media (max-width: 1000px) {
+      @media (max-width: 1084px) {
         font-size: ${theme.FONT_SIZE.XXSMALL};
       }
     `};

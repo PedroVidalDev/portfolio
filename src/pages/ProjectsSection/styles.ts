@@ -13,10 +13,6 @@ export const ProjectsContainer = styled.div`
   gap: 24px;
 
   animation: fadeIn 0.5s ease-in-out;
-
-  @media (max-width: 1000px) {
-    height: unset;
-  }
 `
 
 export const ProjectsHeader = styled.div`
@@ -90,6 +86,10 @@ export const ProjectImage = styled.div<ProjectImageProps>`
 
   &:hover {
     filter: saturate(1);
+  }
+
+  @media (max-width: 1060px) {
+    height: 240px;
   }
 `
 

@@ -66,6 +66,8 @@ export const ContactInput = styled.input`
   font-weight: ${({ theme }) => theme.FONT_WEIGHT.REGULAR};
   color: ${({ theme }) => theme.COLORS.GRAY_500};
 
+  border-radius: 8px;
+
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -89,6 +91,7 @@ export const ContactTextarea = styled.textarea`
 
   background: ${({ theme }) => theme.COLORS.GRAY_900};
   border: 0;
+  border-radius: 8px;
 
   font-family: ${({ theme }) => theme.FONTS.PRIMARY};
   font-size: ${({ theme }) => theme.FONT_SIZE.SMALL};

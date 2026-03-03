@@ -17,7 +17,7 @@ export const HomeSectionContainer = styled.div`
 
   animation: fadeIn 0.5s ease-in-out;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1084px) {
     justify-content: center;
     flex-direction: column;
   }
@@ -33,11 +33,11 @@ export const SubTitle = styled.span`
     font-weight: ${theme.FONT_WEIGHT.MEDIUM};
     text-align: justify;
 
-    @media (max-width: 1333px) {
+    @media (max-width: 1500px) {
       font-size: ${theme.FONT_SIZE.XSMALL};
     }
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1084px) {
       text-align: center;
     }
   `};
@@ -53,12 +53,13 @@ export const ApresentationText = styled.p`
     font-weight: ${theme.FONT_WEIGHT.MEDIUM};
     text-align: justify;
 
-    @media (max-width: 1333px) {
+    @media (max-width: 1500px) {
       font-size: ${theme.FONT_SIZE.XSMALL};
     }
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1084px) {
       text-align: center;
+      max-width: 400px;
     }
   `};
 `
@@ -74,7 +75,7 @@ export const TextsContainer = styled.div`
 
   text-align: center;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1084px) {
     width: 100%;
     padding-right: 0;
     justify-content: center;

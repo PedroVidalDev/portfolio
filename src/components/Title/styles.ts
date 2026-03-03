@@ -18,7 +18,7 @@ export const Title = styled.h2`
     }
   `};
 
-  @media (max-width: 1333px) {
+  @media (max-width: 1500px) {
     ${({ theme }) => css`
       font-size: ${theme.FONT_SIZE.XXXLARGE};
 
